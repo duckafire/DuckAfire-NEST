@@ -1,0 +1,12 @@
+@font-face{
+	font-family: forward;
+	src: url("../font/fff-forward.ttf") format("truetype");
+}
+
+body{
+	font-family: forward;
+	color: #000000;
+	background-color: #111111;
+	
+	-webkit-font-smoothing: antialiased;
+}

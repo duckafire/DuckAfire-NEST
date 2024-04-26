@@ -1,0 +1,31 @@
+.main{
+	background-color: #000000;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	width: 60%;
+	height: 80%;
+}
+
+.head{
+	position: absolute;
+	text-shadow:
+		-2px -2px 0 #ffcc00, /* left-top */
+		 2px -2px 0 #ffcc00, /* right-top */
+		-2px  2px 0 #ffcc00, /* left-below */
+		 2px  2px 0 #ffcc00; /* right-below */
+}
+
+.paragraph{
+	margin-Top: 0px;
+	word-wrap: break-word;
+	display: inline-block;
+	position: absolute;
+	font-size: 16px;
+	text-align: center;
+	text-shadow:
+		-1px -1px 0 #ffcc00, /* left-top */
+		 1px -1px 0 #ffcc00, /* right-top */
+		-1px  1px 0 #ffcc00, /* left-below */
+		 1px  1px 0 #ffcc00; /* right-below */
+}
