@@ -1,5 +1,5 @@
 .main{
-	background-color: #000000;
+	/* background-color: #000000; */
 	position: absolute;
 	top: 10%;
 	left: 20%;
@@ -10,10 +10,10 @@
 .head{
 	position: absolute;
 	text-shadow:
-		-2px -2px 0 #ffcc00, /* left-top */
-		 2px -2px 0 #ffcc00, /* right-top */
-		-2px  2px 0 #ffcc00, /* left-below */
-		 2px  2px 0 #ffcc00; /* right-below */
+		-2px -2px 0 #4e05b5, /* left-top */
+		 2px -2px 0 #4e05b5, /* right-top */
+		-2px  2px 0 #4e05b5, /* left-below */
+		 2px  2px 0 #4e05b5; /* right-below */
 }
 
 .paragraph{
@@ -24,8 +24,8 @@
 	font-size: 16px;
 	text-align: center;
 	text-shadow:
-		-1px -1px 0 #ffcc00, /* left-top */
-		 1px -1px 0 #ffcc00, /* right-top */
-		-1px  1px 0 #ffcc00, /* left-below */
-		 1px  1px 0 #ffcc00; /* right-below */
+		-1px -1px 0 #4e05b5, /* left-top */
+		 1px -1px 0 #4e05b5, /* right-top */
+		-1px  1px 0 #4e05b5, /* left-below */
+		 1px  1px 0 #4e05b5; /* right-below */
 }
