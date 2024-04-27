@@ -15,7 +15,7 @@
 	// }
 	
 	// Html.lang = id;
-	// LangIcon.img = "img/flag-" + country + ".png";
+	// LangIcon.img = "https://duckafire.github.io/nest/img/flag-" + country + ".png";
 // }
 
 // IconLang("load",  updateLanguage());
