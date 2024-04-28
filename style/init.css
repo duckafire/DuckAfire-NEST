@@ -1,9 +1,13 @@
 @font-face{
 	font-family: forward;
-	src: url("https://duckafire.github.io/nest/font/fff-forward.TTF") format("truetype");
+	src: url("../font/fff-forward.TTF") format("truetype");
 }
 
 body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
 	font-family: forward;
 	color: #ffffff;
 	background-color: #8f8f8f;

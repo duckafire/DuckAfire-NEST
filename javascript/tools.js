@@ -14,15 +14,10 @@ this.CurTheme  = "light";
 
 
 // read .json files
-// this.CSTR = null;
-
-// fetch("https://duckafire.github.io/nest/javascript/json-files/const-strings.json").then((response) => {
-	// response.json().then((data) => {
-		// console.log(data.language)
-		// CSTR = data.language;
-	// })
-// });
-
+let CSTR = null;
+fetch("https://duckafire.github.io/nest/javascript/json-files/const-strings.json")
+	.then((response) => response.json())
+		.then((jsonFile) => {CSTR = jsonFile; console.log(CSTR)});
 
 // common funtions (small library)
 this.inPx = (value = 0) => String(Math.floor(value)) + "px";
