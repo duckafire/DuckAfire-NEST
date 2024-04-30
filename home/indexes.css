@@ -1,0 +1,13 @@
+#panel{
+	position: relative;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	height: 80%;
+	background-color: #555555;
+	border-radius: 10px;
+}
+
+#title{ /* ffbb00 - db0000 */
+	color: #db0000;
+}

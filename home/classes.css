@@ -1,0 +1,31 @@
+.inCenter{
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+}
+
+.textSize{
+	position: relative;
+	top: 36%;
+	left: 30%;
+	font-size: 4vw;
+}
+
+/* 4e05b5 */
+/* ffcc00 */
+
+.titleBoard{
+	text-shadow:
+		-2px -2px 0 #ffcc00,
+		 2px -2px 0 #ffcc00,
+		-2px  2px 0 #ffcc00,
+		 2px  2px 0 #ffcc00;
+}
+
+.paraBoard{
+	text-shadow:
+		-1px -1px 0 #ffcc00,
+		 1px -1px 0 #ffcc00,
+		-1px  1px 0 #ffcc00,
+		 1px  1px 0 #ffcc00;
+}

@@ -1,0 +1,12 @@
+@font-face{
+	font-family: forward;
+	src: url("../font/fff-forward.ttf");
+}
+
+body{
+	margin: 25px;
+	width: 90vw;
+	height: 90vh;
+	font-family: forward;
+	background-color: #000;
+}
