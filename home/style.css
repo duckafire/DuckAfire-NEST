@@ -1,26 +1,34 @@
 body {
+	left: 31.68%;
+	border-left: 31.68%;
+	position: absolute;
 	color: #dddddd;
 	background-color: #444444;
 	font-size: 18px;
-	margin = 0px;
+	height: 680px;
+	margin: 0px;
 }
 
 #welc_div {
+	height: 200px;
 	background-color: #000;
 	border-radius: 10px;
-	text-align: center;
-	height: 200px;
-	word-wrap: break-word;
-	overflow: hidden;
 }
 
 #info_div {
 	position: relative;
-	top: 45px;
+	top: 5px;
+	height: 460px;
 	background-color: #000;
+}
+
+.dimensions {
+	position: relative;
+	width: 40%;
+	min-width: 500px;
+	max-width: 7000px;
 	border-radius: 10px;
 	text-align: center;
-	height: 450px;
 	word-wrap: break-word;
 	overflow: hidden;
 }
