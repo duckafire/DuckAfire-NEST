@@ -1,0 +1,13 @@
+body {
+	text-align: center;
+	position: relative;
+	font-size: 1.2rem;
+	margin: 4.3rem;
+	color: #dddddd;
+	background-color: #444444;
+}
+
+a:link    {color: #EB0000;} /* unvisited */
+a:visited {color: #FFFF00;} /* visited */
+a:hover   {color: #FF5500;} /* cursor over link */
+a:active  {color: #FF0099;} /* clicked */

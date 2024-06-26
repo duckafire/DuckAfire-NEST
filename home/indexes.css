@@ -1,0 +1,34 @@
+#dWelcome {
+	height: 12.15rem;
+}
+
+#dNews {
+	top: 0.2em;
+}
+
+#dProjects {
+	top: 0.4em;
+}
+
+#dLinks {
+	top: 0.6em;
+	height: 105px;
+	background: none;
+}
+
+#tMain {
+	position: relative;
+	font-size: 3rem;
+}
+
+#pNotice {
+	top: -1rem;
+}
+
+#pWelcome { top: -3.5rem; }
+#pProjects{ top: -1rem; }
+
+#iTic80 {    left: -1.58em; }
+#iGithub {   left: -0.58em; }
+#iFacebook { left:  0.5em; }
+#iItchio {   left:  1.5em; }

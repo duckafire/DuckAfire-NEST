@@ -1,0 +1,27 @@
+
+.dDimensions {
+	width: 100%;
+	position: relative;
+	border-radius: 10px;
+	word-wrap: break-word;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.pAll {
+	position: relative;
+}
+
+.tsAll {
+	top: -0.3rem;
+	position: relative;
+	font-size: 1.9rem;
+}
+
+.iSocial {
+	top: 0.5em;
+	width: 5rem;
+	position: relative;
+	background-color: #AE0000;
+	border-radius: 25%;
+}
