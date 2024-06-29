@@ -37,7 +37,7 @@ const lproj = [null, null, null];
 
 // SET PARAGRAPHS CONTENTE (text)
 const texts = [null, null, null, null, null, null];
-const tags = ["tMain", "pWelcome", "tNews", "pNotice", "tProjects", "pProjects"];
+	const tags = ["tMain", "pMain", "tNews", "pNoti", "tProj", "pProj"];
 for(let i = 0; i < tags.length; i++) texts[i] = document.getElementById(tags[i]);
 
 (function(){

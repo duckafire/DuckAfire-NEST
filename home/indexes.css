@@ -1,4 +1,4 @@
-#dWelcome {
+#dMain {
 	height: 12.15rem;
 }
 
@@ -6,11 +6,11 @@
 	top: 0.2em;
 }
 
-#dProjects {
+#dProj {
 	top: 0.4em;
 }
 
-#dLinks {
+#dLink {
 	top: 0.6em;
 	height: 105px;
 	background: none;
@@ -21,12 +21,12 @@
 	font-size: 3rem;
 }
 
-#pNotice {
+#pNoti {
 	top: -1rem;
 }
 
-#pWelcome { top: -3.5rem; }
-#pProjects{ top: -1rem; }
+#pMain { top: -3.5rem; }
+#pProj{ top: -1rem; }
 
 #iTic80 {    left: -1.58em; }
 #iGithub {   left: -0.58em; }
