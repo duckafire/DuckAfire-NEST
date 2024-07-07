@@ -11,10 +11,14 @@ if(true && userLang.charAt(0) == 'p' && userLang.charAt(1) == "t"){
 		["pMain-1",  "Aqui você poderá ver mais sobre o meu trabalho."],
 
 		// news
-		["tNews",   "Notícias"],
-		["pNews-0", "[22.06.2024]"],
-		["pNews-1", "A versão v3.0.0 do"],
-		["pNews-2", "já está disponível!"],
+		["tNews",     "Notícias"],
+		["pNews-0-0", "Legendary Champion atuali. v3.0.1:"],
+		["pNews-0-1", "Efeitos sonoros"],
+		["pNews-0-2", "Ajustes nos mapas"],
+		["pNews-0-3", "Várias correções"],
+		["pNews-0-4", "E MAIS "],
+		["pNews-1",   "A versão v3.0.0 do"],
+		["pNews-2",   "já está disponível!"],
 
 		// noti (notices)
 		["tProj",   "Projetos"],
