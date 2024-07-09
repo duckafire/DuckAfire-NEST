@@ -9,7 +9,6 @@
 >> Additions
 1. Added sound effects for: traps, Supervisor (x3), explosions, click (x2), damage and consumable collection.
 2. Now the "Buttons" option in the configurations also increases the size of the buttons in itself menu.
-3. Added the option to erase progress ("RESET-GAME") in the Tic80 menu ("GAME MENU").
 
 >> Changes
 1. Change in the way sounds can be manipulated (switch -> bar).
@@ -31,7 +30,6 @@
 >> Adições
 1. Adicionados efeitos sonoros para: armadilhas, Supervisor (x3), explosões, clique (x2), dano e coleta de consumíveis.
 2. Agora a opção "Botões", das configurações, também aumenta o tamanho dos botões de tal menu.
-3. Adicionada a opção de apagar o progresso ("RESET-GAME") no menu do Tic80 ("GAME MENU").
 
 >> Alterações
 1. Alteração na maneira como os sons podem ser manupulados (interruptor -> barra).
