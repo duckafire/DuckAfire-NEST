@@ -12,16 +12,24 @@ if(true && userLang.charAt(0) == 'p' && userLang.charAt(1) == "t"){
 
 		// news
 		["tNews",     "Notícias"],
-		["pNews-0-0", "--- [09.07.2024] ---"],
-		["pNews-0-1", "Legendary Champion atualização v3.0.1:"],
-		["pNews-0-2", "Efeitos sonoros"],
-		["pNews-0-3", "Ajustes nos mapas"],
-		["pNews-0-4", "Várias correções"],
-		["pNews-0-5", "E MAIS "],
 
-		["pNews-1-0", "--- [22.06.2024] ---"],
-		["pNews-1-1", "A versão v3.0.0 do "],
-		["pNews-1-2", "já está disponível!"],
+		["pNews-0-0", "--- [13.07.2024] ---"],
+		["pNews-0-1", "LIM atualização v0.1.11:"],
+		["pNews-0-2", "Novo prefixo para adicionar funções à tabela da biblioteca"],
+		["pNews-0-3", "Nomes de funções podem ser protegidos"],
+		["pNews-0-4", "Funções da biblioteca podem ser usada dentro da mesma"],
+		["pNews-0-5", "E MAIS! "],
+
+		["pNews-1-0", "--- [09.07.2024] ---"],
+		["pNews-1-1", "Legendary Champion atualização v3.0.1:"],
+		["pNews-1-2", "Efeitos sonoros"],
+		["pNews-1-3", "Ajustes nos mapas"],
+		["pNews-1-4", "Várias correções"],
+		["pNews-1-5", "E MAIS! "],
+
+		["pNews-2-0", "--- [22.06.2024] ---"],
+		["pNews-2-1", "A versão v3.0.0 do "],
+		["pNews-2-2", "já está disponível!"],
 
 		// noti (notices)
 		["tProj",   "Projetos"],
