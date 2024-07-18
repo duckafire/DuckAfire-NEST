@@ -1,0 +1,78 @@
+{
+	"en_us": {
+		"welcome": [
+			"Welcome to my nest!",
+			"Hello, I'm DuckAfire, a indide game developer.",
+			"In this page, you can get links related my work."
+		],
+		"news": [
+			"News",
+			[
+				"07.13",
+				"LIM update v0.1.11:",
+				[
+					"New prefix for add functions to library table",
+					"Functions names can be protected",
+					"Library functions can be used inside itself",
+					"And MORE!"
+				]
+			], [
+				"07.09",
+				"Legendary Champion update v3.0.1:",
+				[
+					"Sound effect",
+					"Adjustments in maps",
+					"Variou fixes",
+					"And MORE!"
+				]
+			], [
+				"06.22",
+				"The version v3.0.3 of the Legendary Champion: Rebirth already it is avaliable!",
+				[null]
+			]
+		],
+		"projects": [
+			"Projects",
+			"TinyLibrary - library collection to Tic80",
+			"LIM - Lua Library Compactor",
+			"Legendary Champion: Rebirth - Tic80 cartridge"
+		]
+	},
+	"pt_br": {
+		"welcome":
+			"Bem vindo ao ninho!",
+			"Olá, eu sou DuckAfire, um desenv. de jogos indie.",
+			"Aqui você poderá ver mais sobre o meu trabalho."
+		],
+		"news":
+			"Notícias",
+			[
+				"13.07",
+				"LIM atualização v0.1.11:",
+				[
+					"Novo prefixo para adicionar funções à tabela da biblioteca",
+					"Nomes de funções podem ser protegidos",
+					"Funções da biblioteca podem ser usada dentro da mesma",
+					"E MAIS! "
+				]
+			], [
+				"09.07",
+				"Legendary Champion atualização v3.0.1:",
+				[
+					"Efeitos sonoros",
+					"Ajustes nos mapas",
+					"Várias correções",
+					"E MAIS! "
+				]
+			], [
+				"22.06",
+				"A versão v3.0.0 do Legendary Champion: Rebirth já está disponível!",
+				[null]
+			]
+		],
+		"projects": [
+			"Projetos",
+			"Coleção de bibliotecas para o"
+		]
+	}
+}
