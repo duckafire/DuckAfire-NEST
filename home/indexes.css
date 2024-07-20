@@ -1,14 +1,8 @@
-#dMain {
-	height: 12.15rem;
-}
+#dMain { height: 12.15rem; }
 
-#dNews {
-	top: 0.2em;
-}
+#dNews { top: 0.2em; }
 
-#dProj {
-	top: 0.4em;
-}
+#dProj { top: 0.4em; }
 
 #dLink {
 	top: 0.6em;
@@ -21,9 +15,7 @@
 	font-size: 3rem;
 }
 
-#pNews {
-	top: -1rem;
-}
+#pNews { top: -1rem; }
 
 #pMain { top: -3.5rem; }
 #pProj{ top: -1rem; }

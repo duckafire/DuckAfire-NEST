@@ -8,6 +8,7 @@ body {
 	margin-bottom: 5%;
 	color: #dddddd;
 	background-color: #444444;
+	background-image: linear-gradient(45deg, #5f0000, #5f2f00, #5f5f00)
 }
 
 a:link    {color: #EB0000;} /* unvisited */
