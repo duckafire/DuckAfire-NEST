@@ -1,26 +1,26 @@
-#dMain { height: 12.15rem; }
+div#main { height: 12.15rem; }
 
-#dNews { top: 0.2em; }
+div#news { top: 0.2em; }
 
-#dProj { top: 0.4em; }
+div#proj { top: 0.4em; }
 
-#dLink {
+div#link {
 	top: 0.6em;
 	height: 105px;
 	background: none;
 }
 
-#tMain {
+h1#welcome {
 	position: relative;
 	font-size: 3rem;
 }
 
-#pNews { top: -1rem; }
+p#newsList { top: -1rem; }
 
-#pMain { top: -3.5rem; }
-#pProj{ top: -1rem; }
+p#welcomeMsg { top: -3.5rem; }
+p#projList{ top: -1rem; }
 
-#iTic80 {    left: -1.58em; }
-#iGithub {   left: -0.58em; }
-#iFacebook { left:  0.5em; }
-#iItchio {   left:  1.5em; }
+img#tic80 {    left: -1.58em; }
+img#github {   left: -0.58em; }
+img#facebook { left:  0.5em; }
+img#itchio {   left:  1.5em; }

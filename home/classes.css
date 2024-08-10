@@ -1,4 +1,4 @@
-.dDimensions {
+div.dimensions {
 	left: 5%;
 	width: 90%;
 	position: relative;
@@ -8,17 +8,17 @@
 	background-color: #000;
 }
 
-.pAll {
+p.all {
 	position: relative;
 }
 
-.tsAll {
+h3.h3All {
 	top: -0.3rem;
 	position: relative;
 	font-size: 1.9rem;
 }
 
-.iSocial {
+img.social {
 	top: 0.4em;
 	width: 5rem;
 	position: relative;
