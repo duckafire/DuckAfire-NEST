@@ -1,0 +1,59 @@
+* {
+	top: 0px;
+	left: 0px;
+}
+
+body{
+	background-color: #3a3a3a;
+	color: #bbb;
+	font-size: 1.5rem;
+	padding: 2.2rem;
+}
+
+/* unvisited | visited | cursor on link | clicked */
+/* a:link    {color: #c00;} */
+/* a:visited {color: #dd0;} */
+/* a:hover   {color: #d50;} */
+/* a:active  {color: #d09;} */
+
+a {
+	color: #bbb;
+}
+
+.panel {
+	position: relative;
+	background-color: #000;
+	border-radius: 10px;
+	padding: 0.63rem 2rem 0.63rem 2rem; /* top rigth bottom left */
+	width: 100%;
+}
+
+.social-icon{
+	margin-bottom: 25%;
+}
+
+#welcome {
+	display: flex;
+	height: 35%;
+	min-height: 428px;
+}
+
+#apresentation{
+	padding-top: 2.25rem;
+	width: 70%;
+}
+
+#social-media{
+	min-width: 125px;
+	text-align: center;
+	display: block;
+	font-size: 4rem;
+	padding: 2rem 1.3rem 0.485rem 1.3rem;
+	left: 0.6%;
+	width: 9%;
+}
+
+#news{
+	width: 90%;
+	top: 0.3rem;
+}

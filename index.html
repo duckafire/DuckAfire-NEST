@@ -4,69 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nest of the DuckAfire</title>
-	<link rel="icon" type="image/png" href="img/page-icon.png">
-	<link rel="stylesheet" href="home/other.css">
-	<link rel="stylesheet" href="home/classes.css">
-	<link rel="stylesheet" href="home/indexes.css">
+	<link rel="stylesheet" href="home/style.css">
 </head>
 <body>
-	<div id="main" class="dimensions">
-		<h1 id="welcome">Welcome to my nest!</h1>
-		<br>
-		<p id="welcomeMsg" class="all">
-			<span id="welcomeMsg-0">Hello, I'm DuckAfire, a indie game developer.</span>
-			<br>
-			<span id="welcomeMsg-1">In this page, you can links related my work.</span>
-		</p>
+	<div id="welcome">
+		<div class="panel" id="apresentation">
+			<h2>Hello World!</h2>
+			<p>&emsp;I'm DuckAfire, a indie game developer in constant process of learning. User of the programming languages: Lua, C and JavaScript. Currently I'm working in THREE projects:
+			<ul>
+				<li><a title="Lua Library Compactor"  href="https://github.com/duckafire/LIM"        >Lim</a></li>
+				<li><a title="Libraries to Tic80"     href="https://github.com/duckafire/TinyLibrary">TinyLibrary</a></li>
+				<li><a title="A simple survival game" href="https://tic80.com/cart?play=3315"        >Legendary Champion: Rebirth</a></li>
+			</ul>
+		</div>
+		<div class="panel" id="social-media">
+			<a title="My repositories" href="https://github.com/duckafire"  ><i class="fa-brands fa-github   social-icon"></i></a>
+			<a title="My indie games"  href="https://duckafire.itch.io"     ><i class="fa-brands fa-itch-io  social-icon"></i></a>
+			<a title="Like a blog"     href="https://facebook.com/duckafire"><i class="fa-brands fa-facebook social-icon"></i></a>
+			<a title="Tic80 catridges" href="https://tic80.com/dev?id=8700" ><i class="fa-solid  fa-gamepad  social-icon"></i></a>
+		</div>
 	</div>
-
-	<div id="news" class="dimensions">
-		<h3 class="h3All">News</h3>
-		<p id="newsList" class="all">
-			<!-- 01 -->
-			<strong>--- [<span id="newsList-0-0">07.13</span>.2024] ---</strong>
-			<br><span id="newsList-0-1">LIM update v0.1.11:</span>
-			<br><span id="newsList-0-2">New prefix for add functions to the library table</span>
-			<br><span id="newsList-0-3">Functions names can be protected</span>
-			<br><span id="newsList-0-4">Library functions can be used inside itself</span>
-			<br><a    id="newsList-0-5" href="https://github.com/duckafire/LIM/releases/tag/v0.1.11" title="Log - GitHub">And MORE!</a>
-			<!-- 02 -->
-			<br><br><strong>--- [<span id="newsList-1-0">07.09</span>.2024] ---</strong>
-			<br><span id="newsList-1-1">Legendary Champion update v3.0.1:</span>
-			<br><span id="newsList-1-2">Sound effect</span>
-			<br><span id="newsList-1-3">Adjustment in maps</span>
-			<br><span id="newsList-1-4">Various fixes</span>
-			<br><a    id="newsList-1-5" href="https://duckafire.github.io/nest/projects-log/legendary-champion/v3.0.1.txt" title="Log - Web">And MORE!</a>
-			<!-- 03 -->
-			<br><br> <strong>--- [<span id="newsList-2-0">06.22</span>.2024] ---</strong>
-			<br><span id="newsList-2-1">The version v3.0.0 of the </span><a href="https://tic80.com/play?cart=3315" title="Play the game in your WebBrowser">Legendary Champion: Rebirth</a>
-			<br><span id="newsList-2-2">already it is avaliable!</span>
-		</p>
-	</div>
-	
-	<div id="proj" class="dimensions">
-		<h3 class="h3All">Projects</h3>
-		<p id="projList" class="all">
-			<!-- tinylibrary -->
-			<a href="https://github.com/duckafire/TinyLibrary" title="Repository - GitHub">TinyLibrary</a>
-			-
-			<span id="projList-0">Library collection to</span>
-			<a href="https://tic80.com" title="Official WebSite">Tic80</a>
-			<br>
-			<!-- lim -->
-			<a href="https://github.com/duckafire/LIM" title="Repository - GitHub">LIM</a>
-			- <strong>L</strong>ua L<strong>i</strong>brary Co<strong>m</strong>pactor</a>
-			<br>
-			<!-- lc: rebirth -->
-			<a href="https://tic80.com/play?cart=3315" title="Play the game in your WebBrowser">Legendary Champion: Rebirth</a>
-	</p>
-	</div>
-
-	<div id="link" class="dimensions">
-		<a href="https://tic80.com/dev?id=8700"  title="Tic80 cartridges"      ><img id="tic80"    class="social" src="./img/social-tic80.png"   ></a>
-		<a href="https://github.com/duckafire"   title="Projects repositories" ><img id="github"   class="social" src="./img/social-github.png"  ></a>
-		<a href="https://facebook.com/duckafire" title="News about projects"   ><img id="facebook" class="social" src="./img/social-facebook.jpg"></a>
-		<a href="https://duckafire.itch.io"      title="Games to download"     ><img id="itchio"   class="social" src="./img/social-itchio.png"  ></a>
+	<div class="panel" id="news">
+		<p>&emsp;Lorem ipsum quam himenaeos velit molestie auctor justo quam phasellus at proin iaculis, primis eu hac hendrerit scelerisque pretium enim habitant sapien rhoncus ligula, rutrum nam auctor fermentum cursus suspendisse donec lobortis accumsan faucibus lacinia. nulla etiam integer leo convallis maecenas sit quam lacinia maecenas pellentesque, molestie sed massa mattis tellus potenti blandit quis tempor, rhoncus fermentum volutpat egestas augue dictumst nec aptent ligula. sollicitudin ante torquent primis malesuada tortor pulvinar semper rutrum, dictumst hac molestie blandit laoreet hac aenean, adipiscing dapibus tortor id netus nostra venenatis. nulla pellentesque maecenas eros viverra habitasse convallis consectetur risus, integer phasellus tortor odio tempus augue nisi.</p>
 	</div>
 </body>
+<script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
 </html>
