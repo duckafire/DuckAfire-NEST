@@ -13,6 +13,7 @@ body{
 	background-image: linear-gradient(45deg, #5f0000, #5f2f00, #5f5f00);
 	background-size: 100% 100%;
 	background-attachment: fixed;
+	padding: 5vh 16.5vw 5vh 16.5vw;
 }
 
 a { color: #bbb; }
@@ -26,10 +27,11 @@ a { color: #bbb; }
 }
 
 .social-icon{
-	margin-bottom: 25%;
+	margin-bottom: 50%;
 }
 
 #welcome {
+	box-sizing: border-box;
 	min-width: 300px;
 	display: flex;
 	gap: 0.5rem;
@@ -38,13 +40,18 @@ a { color: #bbb; }
 
 #apresentation{
 	min-width: 300px;
+	max-width: 700px;
 	padding-top: 2.25rem;
 }
 
 #social-media{
-	min-width: 125px;
+	min-width: 80px;
+	max-width: 125px;
+	width: 125px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
-	display: block;
 	font-size: 4rem;
 	padding: 2rem 1.3rem 0.485rem 1.3rem;
 	width: 12%;
@@ -52,6 +59,7 @@ a { color: #bbb; }
 
 #news{
 	box-sizing: border-box;
-	min-width: 537px;
+	min-width: 490px;
+	max-width: 925px;
 	top: 0.3rem;
 }

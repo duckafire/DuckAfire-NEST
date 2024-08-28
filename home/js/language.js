@@ -5,7 +5,6 @@ console.log(language[0]);
 if(true && language[0] == 'p' && language[1] == 't'){
 	// APRESENTATION
 	document.getElementById("mainTitl").textContent = "Olá Mundo";
-	// no tab (for now)
 	document.getElementById("mainPara").textContent = "Eu sou DuckAfire, um desenvolvedor de jogos indies em contante processo de aprendizado. Usuário das linguagens de programação: Lua, C e JavaScript. Atualmente eu estou trabalhando em TRÊS projetos:";
 
 	// SOCIAL ICONS

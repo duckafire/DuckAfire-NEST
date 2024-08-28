@@ -10,11 +10,12 @@ for(let i = 0; i < newsContent.length; i++){
 	titl.style.background = "#1f1f1f";
 	titl.style.borderRadius = "10px";
 	titl.style.textAlign = "center"
+	titl.style.padding = "0.3rem 1rem 0.3rem 1rem";
 
 	para = document.createElement("p");
 	para.textContent = newsContent[i][1];
 	para.style.position = "relative";
-	para.style.padding = "0px 1rem 0px 1rem";
+	para.style.padding = "0px 2.5% 0px 2.5%";
 	para.style.top = "-20px";
 	para.setAttribute("hidden", true);
 
