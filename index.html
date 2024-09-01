@@ -7,27 +7,39 @@
 	<link rel="stylesheet" href="home/style.css">
 </head>
 <body>
-	<div id="welcome">
-		<div class="panel" id="apresentation">
-			<h2 id="mainTitl">Hello World!</h2>
-			<p  id="mainPara">I'm DuckAfire, a indie game developer in constant process of learning. User of the programming languages: Lua, C and JavaScript. Currently I'm working in THREE projects:
-			<ul>
-				<li><a title="Lua Library Compactor"  href="https://github.com/duckafire/LIM"        >Lim</a></li>
-				<li><a title="Libraries to Tic80"     href="https://github.com/duckafire/TinyLibrary">TinyLibrary</a></li>
-				<li><a title="A simple survival game" href="https://tic80.com/play?cart=3315"        >Legendary Champion: Rebirth</a></li>
-			</ul>
+	<div id="hideAll" hidden>
+		<div id="welcome">
+			<div class="panel" id="apresentation">
+				<h2 id="mainTitl"></h2>
+				<p  id="mainPara"></p>
+				<ul>
+					<li><a title="Lua Library Compactor"  href="https://github.com/duckafire/LIM"        >Lim</a></li>
+					<li><a title="Libraries to Tic80"     href="https://github.com/duckafire/TinyLibrary">TinyLibrary</a></li>
+					<li><a title="A simple survival game" href="https://tic80.com/play?cart=3315"        >Legendary Champion: Rebirth</a></li>
+				</ul>
+			</div>
+			<div class="panel" id="social-media">
+				<a href="https://github.com/duckafire"  ><i class="fa-brands fa-github   social-icon"></i></a>
+				<a href="https://duckafire.itch.io"     ><i class="fa-brands fa-itch-io  social-icon"></i></a>
+				<a href="https://facebook.com/duckafire"><i class="fa-brands fa-facebook social-icon"></i></a>
+				<a href="https://tic80.com/dev?id=8700" ><i class="fa-solid  fa-gamepad  social-icon"></i></a>
+			</div>
 		</div>
-		<div class="panel" id="social-media">
-			<a title="My repositories"    href="https://github.com/duckafire"  ><i class="fa-brands fa-github   social-icon"></i></a>
-			<a title="My indie games"     href="https://duckafire.itch.io"     ><i class="fa-brands fa-itch-io  social-icon"></i></a>
-			<a title="Like a blog"        href="https://facebook.com/duckafire"><i class="fa-brands fa-facebook social-icon"></i></a>
-			<a title="Catridges to Tic80" href="https://tic80.com/dev?id=8700" ><i class="fa-solid  fa-gamepad  social-icon"></i></a>
-		</div>
+		<div class="panel" id="news"></div>
 	</div>
-	<div class="panel" id="news" hidden></div>
 </body>
+<!-- resources from Font Awesome -->
 <script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
-<script src="home/js/language.js"></script>
-<script src="home/js/create-news.js"></script>
-<script src="home/js/events.js"></script>
+<!-- declaration of variables, arraies, matrixes and constantes -->
+<script src="home/js/header.js"       ></script>
+<!-- create headers and paragraphs to news -->
+<script src="home/js/create-news.js"  ></script>
+<!-- declarate functions to get text content in different languages -->
+<script src="home/js/texts-content.js"></script>
+<!-- website language (auto and manually) -->
+<script src="home/js/set-language.js" ></script>
+<!-- interation events -->
+<script src="home/js/events.js"       ></script>
+<!-- show elements (after load) -->
+<script>document.getElementById("hideAll").removeAttribute("hidden");</script>
 </html>

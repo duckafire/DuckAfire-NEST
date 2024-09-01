@@ -1,31 +1,26 @@
-const news = document.getElementById("news");
+(function(){
+	let cont = null;
+	let titl = null;
+	let para = null;
 
-let cont = null;
-let titl = null;
-let para = null;
-for(let i = 0; i < newsContent.length; i++){
-	// 0 = titl | 1 = paragraph
-	titl = document.createElement("h4");
-	titl.textContent = newsContent[i][0];
-	titl.style.background = "#1f1f1f";
-	titl.style.borderRadius = "10px";
-	titl.style.textAlign = "center"
-	titl.style.padding = "0.3rem 1rem 0.3rem 1rem";
+	for(let i = 0; i < NEWS_CHILD_LEN; i++){
+		// 0 = titl | 1 = paragraph
+		titl = document.createElement("h4");
+		titl.style.background   = "#1f1f1f";
+		titl.style.borderRadius = "10px";
+		titl.style.padding      = "0.3rem 1rem 0.3rem 1rem";
+		titl.style.textAlign    = "center"
 
-	para = document.createElement("p");
-	para.textContent = newsContent[i][1];
-	para.style.position = "relative";
-	para.style.padding = "0px 2.5% 0px 2.5%";
-	para.style.top = "-20px";
-	para.setAttribute("hidden", true);
+		para = document.createElement("p");
+		para.setAttribute("hidden", true);
+		para.style.padding  = "0px 2.5% 0px 2.5%";
+		para.style.position = "relative";
+		para.style.top      = "-20px";
 
-	cont = document.createElement("div");
-	// cont.style.background = "#1f1f1f";
-	// cont.style.borderRadius = "10px";
-	cont.appendChild(titl);
-	cont.appendChild(para);
+		cont = document.createElement("div");
+		cont.appendChild(titl);
+		cont.appendChild(para);
 
-	news.appendChild(cont);
-}
-
-news.removeAttribute("hidden");
+		news.appendChild(cont);
+	}
+})();
