@@ -16,6 +16,7 @@ body{
 }
 
 a { color: #bbb; }
+a:hover { color: #0a5; }
 
 .panel {
 	position: relative;
@@ -25,7 +26,16 @@ a { color: #bbb; }
 	width: 100%;
 }
 
-/* .social-icon{ } */
+#language {
+	background-color: #555;
+	border-radius: 50%;
+	position: absolute;
+	width: 7%;
+	top: 1%;
+	left: 92.25%;
+}
+
+#language:hover { background-color: #bbb; }
 
 #welcome {
 	box-sizing: border-box;

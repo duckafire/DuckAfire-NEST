@@ -10,8 +10,9 @@
 	<div id="hideAll" hidden>
 		<div id="welcome">
 			<div class="panel" id="apresentation">
-				<h2 id="mainTitl"></h2>
-				<p  id="mainPara"></p>
+				<h2  id="mainTitl"></h2>
+				<p   id="mainPara"></p>
+				<img id="language" src="img/united-states.png"></img>
 				<ul>
 					<li><a title="Lua Library Compactor"  href="https://github.com/duckafire/LIM"        >Lim</a></li>
 					<li><a title="Libraries to Tic80"     href="https://github.com/duckafire/TinyLibrary">TinyLibrary</a></li>
@@ -30,15 +31,31 @@
 </body>
 <!-- resources from Font Awesome -->
 <script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
-<!-- declaration of variables, arraies, matrixes and constantes -->
-<script src="home/js/header.js"       ></script>
+
+<!-- GLOBAL -->
+<script>
+	// constantes
+	const MAX_LANG_ID    = 0; // "last" language index
+	const NEWS_CHILD_LEN = 4; // news children (/ 2)
+
+	// elements
+	const NEWS = document.getElementById("news");
+	const LANG = document.getElementById("language");
+
+	// variables
+	let curLangID = -1 // current language
+
+	// arries
+	let iconContent = null; // icons title
+	let welcContent = null; // message about DuckAfire
+	let newsContent = null; // 'h4' and 'p' in news
+</script>
+
 <!-- create headers and paragraphs to news -->
 <script src="home/js/create-news.js"  ></script>
-<!-- declarate functions to get text content in different languages -->
+<!-- declarate functions to set language -->
 <script src="home/js/texts-content.js"></script>
-<!-- website language (auto and manually) -->
-<script src="home/js/set-language.js" ></script>
-<!-- interation events -->
+<!-- auto and interation events -->
 <script src="home/js/events.js"       ></script>
 <!-- show elements (after load) -->
 <script>document.getElementById("hideAll").removeAttribute("hidden");</script>

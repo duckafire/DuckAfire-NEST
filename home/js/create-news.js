@@ -1,7 +1,8 @@
+// NEWS: headers and paragraphs
 (function(){
-	let cont = null;
-	let titl = null;
-	let para = null;
+	let cont = null; // container
+	let titl = null; // title
+	let para = null; // paragraph
 
 	for(let i = 0; i < NEWS_CHILD_LEN; i++){
 		// 0 = titl | 1 = paragraph
@@ -21,6 +22,6 @@
 		cont.appendChild(titl);
 		cont.appendChild(para);
 
-		news.appendChild(cont);
+		NEWS.appendChild(cont);
 	}
 })();
