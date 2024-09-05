@@ -19,12 +19,17 @@ function updateTextContent(){
 	// set language icon
 	let img = ["united-states", "brazil"];
 	LANG.src = "img/" + img[curLangID + 1] + ".png";
+
+	// page language
+	let lang = ["en", "pt"];
+	document.documentElement.lang = lang[curLangID + 1];
 }
 
 // auto (in boot)
 switch((navigator.userLanguage || navigator.language).slice(0, 2)){
 	case "pt":
 		curLangID = 0;
+		document.documentElement.lang = "pt";
 		setAllTextContent(0);
 		break;
 	default:
