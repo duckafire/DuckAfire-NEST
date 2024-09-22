@@ -35,7 +35,7 @@ function welcCtt(id){
 			"Eu sou DuckAfire, um desenvolvedor de jogos "   +
 			"indies em contante processo de aprendizado. "   +
 			"Usuário das linguagens de programação: Lua, C " +
-			"e JavaScript. Atualmente eu estou trabalhando"  +
+			"e JavaScript. Atualmente eu estou trabalhando " +
 			"em TRÊS projetos:"
 		]
 	}
