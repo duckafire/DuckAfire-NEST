@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nest of the DuckAfire</title>
+
 	<link rel="stylesheet" href="home/style.css">
 </head>
+
 <body>
 	<div id="hideAll" hidden>
+		
 		<div id="welcome">
-			<div class="panel" id="apresentation">
+			
+			<div id="apresentation" class="panel">
+				
 				<h2  id="mainTitl"></h2>
 				<p   id="mainPara"></p>
+				
 				<div id="sub-options">
 					<a id="donate" target="_blank" href="https://github.com/sponsors/duckafire"><i class="fas fa-heart"></i></a>
 				</div>
+				
 				<div id="options">
 					<img id="language" src="img/united-states.png"></img>
 				</div>
+				
 				<ul>
 					<li><a target="_blank" title="Lua Library Compactor"  href="https://github.com/duckafire/LIM"        >Lim</a></li>
 					<li><a target="_blank" title="Libraries to Tic80"     href="https://github.com/duckafire/TinyLibrary">TinyLibrary</a></li>
 					<li><a target="_blank" title="A simple survival game" href="https://tic80.com/play?cart=3315"        >Legendary Champion: Rebirth</a></li>
 				</ul>
+
 			</div>
-			<div class="panel" id="social-media">
+			
+			<div id="social-media" class="panel">
 				<a target="_blank" href="https://github.com/duckafire"  ><i class="fa-brands fa-github   social-icon"></i></a>
 				<a target="_blank" href="https://duckafire.itch.io"     ><i class="fa-brands fa-itch-io  social-icon"></i></a>
 				<a target="_blank" href="https://facebook.com/duckafire"><i class="fa-brands fa-facebook social-icon"></i></a>
 				<a target="_blank" href="https://tic80.com/dev?id=8700" ><i class="fa-solid  fa-gamepad  social-icon"></i></a>
 			</div>
+
 		</div>
+	
 		<div class="panel" id="news"></div>
+
 	</div>
 </body>
+
 <!-- resources from Font Awesome -->
 <script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
 
@@ -58,10 +73,14 @@
 
 <!-- create headers and paragraphs to news -->
 <script src="home/js/create-news.js"  ></script>
+
 <!-- declarate functions to set language -->
 <script src="home/js/texts-content.js"></script>
+
 <!-- auto and interation events -->
 <script src="home/js/events.js"       ></script>
+
 <!-- show elements (after load) -->
 <script>document.getElementById("hideAll").removeAttribute("hidden");</script>
+
 </html>
