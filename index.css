@@ -1,0 +1,84 @@
+:root {
+	--font: #efefef;
+	--panel: #4a8a4a;
+	--border: #000;
+}
+
+* {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	color: var(--font);
+}
+
+body {
+	background-image: linear-gradient(45deg, #4f0000, #4f1f00, #4f4f00);
+	width: 100vw;
+	height: 100vh;
+}
+
+.drawer {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--panel);
+	border-radius: 5px;
+	margin: 7.5vh 2.5vw 2vw 2.5vw;
+	height: 3rem;
+	min-height: 28px;
+	justify-content: center;
+}
+
+div.top-menu-parts {
+	box-sizing: border-box;
+	width: 50vw;
+}
+
+div#top-menu {
+	display: flex;
+	background-color: var(--panel);
+	height: 8.25vh;
+	padding: 0.5rem;
+	align-items: center;
+}
+
+div#top-menu-left {
+	left: 0.5vw;
+	font-size: 3rem;
+}
+
+div#top-menu-right {
+	left: -1.5vw;
+	font-size: 1.875rem;
+	gap: 4.85vw;
+	display: flex;
+	justify-content: end;
+}
+
+img#perfil-icon {
+	width: 42.5%;
+	max-width: 350px;
+	border-radius: 50%;
+	padding: 2.5px;
+	background-color: #000;
+}
+
+div#home-main-content {
+	top: 7.5vh;
+	font-size: 1.25rem;
+	width: 100vw;
+	text-align: center;
+}
+
+div#social-media-panel {
+	z-index: 1;
+	position: absolute;
+	background-color: #000;
+	padding: 0.4rem;
+	border-radius: 10px;
+	top: 50px;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	font-size: 3.5rem;
+	gap: 12px;
+}
