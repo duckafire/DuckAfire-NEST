@@ -42,28 +42,44 @@
 	</div>
 	<div id="top-menu">
 		<div id="top-menu-left" class="top-menu-parts">
-			<i class="cursor-hand fa-solid fa-bars"></i>
+			<i id="burger-menu" class="cursor-hand fa-solid fa-bars"></i>
 		</div>
 		<div id="top-menu-right" class="top-menu-parts">
 			<i class="cursor-hand fa-brands fa-github" id="social-media"></i>
 			<i class="cursor-hand fa-solid fa-donate"  id="donate"></i>
 			<i class="cursor-hand fa-solid fa-globe"></i>
-			<i class="cursor-hand fa-solid fa-sun"></i>
+			<!--<i class="cursor-hand fa-solid fa-sun"></i>-->
 		</div>
 	</div>
 	<div id="home-main-content">
 		<img id="perfil-icon" class="cursor-hand" src="./content/img/duckafire-perfil-icon.png">
-		<div id="hello-world" class="drawer">
-			<h3>Hello World!</h3>
-		</div>
-		<div id="projects" class="drawer">
-			<h3>Projects</h3>
-		</div>
-		<div id="last-news" class="drawer">
-			<h3>Last News</h3>
-		</div>
+		<section id="section-hello-world">
+			<div id="hello-world" class="drawer">
+				<h3 id="hello-world-title"></h3>
+			</div>
+			<div id="hello-world-panel" class="drawer-content" hidden>
+				<p id="hello-world-content"></p>
+			</div>
+		</section>
+		<section id="section-projects">
+			<div id="projects" class="drawer">
+				<h3 id="projects-title"></h3>
+			</div>
+			<div id="projects-panel" class="drawer-content" hidden>
+				<p id="projects-content"></p>
+			</div>
+		</section>
+		<section id="section-last-news">
+			<div id="last-news" class="drawer">
+				<h3 id="last-news-title"></h3>
+			</div>
+			<div id="last-news-panel" class="drawer-content" hidden>
+				<p id="last-news-content"></p>
+			</div>
+		</section>
 	</div>
 </body>
 <script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
+<script src="textContent.js"></script>
 <script src="index.js"></script>
 </html>

@@ -1,20 +1,52 @@
-const SocialMedia = {
-	id: 0,
-	icon: document.getElementById("social-media"),
-	iconBg: document.getElementById("social-panel-background"),
-	classes: ["github", "itch-io", "facebook", "gamepad"],
-	anim: function(it){
-		let group = "brands";
-		if(it.id == 3) group = "solid";
+const PageValues = {
+	language: (navigator.userLanguage || navigator.language).slice(0, 2) == "pt",
+	lightScheme: window.matchMedia("(prefers-color-scheme: light)").matches,
+};
 
-		it.icon.className = "cursor-hand fa-" + group + " fa-" + it.classes[it.id];
+if(PageValues.language){
+	LanguagePT(TextContent);
+}else{
+	LanguageEN(TextContent);
+}
+
+const BurgerMenu = document.getElementById("burger-menu");
+const Donate     = document.getElementById("donate");
+
+const SocialMediaPanel = {
+	bg:    document.getElementById("social-panel-background"),
+	shape: document.getElementById("social-panel-shape"),
+	icon:  document.getElementById("social-media"),
+
+	id: 0,
+	group: "brands",
+	classes: ["github", "itch-io", "facebook", "gamepad"],
+	iconAnim: function(it){
+		it.group = "brands";
+		if(it.id == 3) it.group = "solid";
+
+		it.icon.className = "cursor-hand fa-" + it.group + " fa-" + it.classes[it.id];
+
 		it.id++;
 		if(it.id > 3) it.id = 0;
 	},
 };
 
-setInterval(SocialMedia.anim, 2500, SocialMedia);
-SocialMedia.icon.addEventListener("click", () => {SocialMedia.iconBg.hidden = false;})
-SocialMedia.iconBg.addEventListener("click", () => {SocialMedia.iconBg.hidden = true;});
-document.getElementById("social-panel-shape").addEventListener("click", (event) => {event.stopPropagation();});
-document.getElementById("donate").addEventListener("click", () => {window.open("https://github.com/sponsors/duckafire");});
+const DrawerContent = [
+	document.getElementById("section-hello-world"),
+	document.getElementById("section-projects"),
+	document.getElementById("section-last-news"),
+];
+
+DrawerContent[0].children[0].hidden = false;
+
+Donate.addEventListener("click", () => {window.open("https://github.com/sponsors/duckafire");});
+
+window.setInterval(SocialMediaPanel.iconAnim, 2500, SocialMediaPanel);
+SocialMediaPanel.bg.addEventListener(   "click", () => {SocialMediaPanel.bg.hidden = true; });
+SocialMediaPanel.shape.addEventListener("click", (event) => {event.stopPropagation();});
+SocialMediaPanel.icon.addEventListener( "click", () => {SocialMediaPanel.bg.hidden = false;})
+
+for(let i = 0; i < 3; i++)
+	DrawerContent[i].children[0].addEventListener("click", (event) => {
+		event.currentTarget.parentNode.children[1].hidden = !event.currentTarget.parentNode.children[1].hidden;
+	});

@@ -1,6 +1,7 @@
 :root {
 	--color-font: #efefef;
 	--color-panel: #4a8a4a;
+	--color-sub-panel: #175717;
 	--color-border: #000;
 }
 
@@ -30,10 +31,21 @@ div.drawer {
 	flex-direction: column;
 	background-color: var(--color-panel);
 	border-radius: 5px;
-	margin: 6vh 2.5vw 6vh 2.5vw;
+	margin: 6vh 2.5vw 0px 2.5vw;
 	height: 3rem;
 	min-height: 28px;
 	justify-content: center;
+}
+
+div.drawer-content {
+	background-color: var(--color-sub-panel);
+	font-size: 0.95rem;
+	margin: 0px 2.5vw 0px 2.5vw;
+	border-radius: 5px;
+	top: -1rem;
+	padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+	z-index: -1;
+
 }
 
 div.top-menu-parts {
@@ -117,4 +129,5 @@ div#home-main-content {
 	top: 7.5vh;
 	font-size: 1.25rem;
 	text-align: center;
+	margin-bottom: 6vh;
 }
