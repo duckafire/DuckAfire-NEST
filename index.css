@@ -5,6 +5,10 @@
 	--color-border: #000;
 }
 
+::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar-thumb { display: none; }
+html { scrollbar-width: none; }
+
 * {
 	font-family: silkscreen;
 	position: relative;
@@ -43,9 +47,8 @@ div.drawer-content {
 	margin: 0px 2.5vw 0px 2.5vw;
 	border-radius: 5px;
 	top: -1rem;
-	padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+	padding: 1.5rem 1.5rem 1.9rem 1.5rem;
 	z-index: -1;
-
 }
 
 div.top-menu-parts {
@@ -67,6 +70,8 @@ section.panel-align {
 
 div#top-menu {
 	display: flex;
+	position: fixed;
+	z-index: 1;
 	background-color: var(--color-panel);
 	height: 8.25vh;
 	padding: 0.5rem;
@@ -80,7 +85,7 @@ div#top-menu-left {
 }
 
 div#top-menu-right {
-	left: -1.5vw;
+	right: 1.425rem;
 	font-size: 1.875rem;
 	width: 50vw;
 	gap: 4.85vw;
@@ -99,7 +104,7 @@ div#social-panel-background {
 
 div#social-panel-shape {
 	font-size: 17.4vw;
-	top: 12%;
+	top: 16%;
 	left: 10%;
 	width: 80%;
 	height: 76%;
@@ -126,8 +131,17 @@ img#perfil-icon {
 }
 
 div#home-main-content {
-	top: 7.5vh;
 	font-size: 1.25rem;
 	text-align: center;
+	padding-top: 16vh;
 	margin-bottom: 6vh;
+}
+
+div#projects-content-links {
+	text-decoration: underline;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin: 2rem 0px 0.875rem 0px;
+	font-size: 1.2rem;
 }
