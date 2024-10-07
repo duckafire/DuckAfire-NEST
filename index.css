@@ -12,9 +12,10 @@
 }
 
 body {
-	background-image: linear-gradient(45deg, #4f0000, #4f1f00, #4f4f00);
-	width: 100vw;
-	height: 100vh;
+	background-image: linear-gradient(0deg, #4f0000, #4f1f00, #4f4f00);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	box-sizing: border-box;
 }
 
 .drawer {
@@ -22,7 +23,7 @@ body {
 	flex-direction: column;
 	background-color: var(--panel);
 	border-radius: 5px;
-	margin: 7.5vh 2.5vw 2vw 2.5vw;
+	margin: 6vh 2.5vw 6vh 2.5vw;
 	height: 3rem;
 	min-height: 28px;
 	justify-content: center;
@@ -44,14 +45,16 @@ div#top-menu {
 div#top-menu-left {
 	left: 0.5vw;
 	font-size: 3rem;
+	width: 50vw;
 }
 
 div#top-menu-right {
 	left: -1.5vw;
 	font-size: 1.875rem;
+	width: 50vw;
 	gap: 4.85vw;
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 }
 
 img#perfil-icon {
@@ -65,7 +68,6 @@ img#perfil-icon {
 div#home-main-content {
 	top: 7.5vh;
 	font-size: 1.25rem;
-	width: 100vw;
 	text-align: center;
 }
 
