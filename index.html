@@ -4,22 +4,55 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nest of the DuckAfire</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
+	<div id="social-panel-background" hidden>
+		<div id="social-panel-shape">
+			<div id="social-panel-grid">
+				<section class="panel-align">
+					<a href="https://github.com/duckafire" target="_blank">
+						<i class="fa-brands fa-github"></i>
+						<p class="panel-text">GitHub</p>
+					</a>
+				</section>
+				<section class="panel-align">
+					<a href="https://facebook.com/duckafire" target="_blank">
+						<i class="fa-brands fa-facebook"></i>
+						<p class="panel-text">Facebook</p>
+					</a>
+				</section>
+				<section class="panel-align">
+					<a href="https://duckafire.itch.io" target="_blank">
+						<i class="fa-brands fa-itch-io"></i>
+						<p class="panel-text">Itch.io</p>
+					</a>
+				</section>
+				<section class="panel-align">
+					<a href="https://tic80.com/dev?id=8700" target="_blank">
+						<i class="fa-solid fa-gamepad"></i>
+						<p class="panel-text">Tic80</p>
+					</a>
+				</section>
+			</div>
+		</div>
+	</div>
 	<div id="top-menu">
 		<div id="top-menu-left" class="top-menu-parts">
-			<i class="fa-solid fa-bars"></i>
+			<i class="cursor-hand fa-solid fa-bars"></i>
 		</div>
 		<div id="top-menu-right" class="top-menu-parts">
-			<i class="fa-brands fa-github" id="social-media"></i>
-			<i class="fa-solid fa-donate"></i>
-			<i class="fa-solid fa-globe"></i>
-			<i class="fa-solid fa-sun"></i>
+			<i class="cursor-hand fa-brands fa-github" id="social-media"></i>
+			<i class="cursor-hand fa-solid fa-donate"  id="donate"></i>
+			<i class="cursor-hand fa-solid fa-globe"></i>
+			<i class="cursor-hand fa-solid fa-sun"></i>
 		</div>
 	</div>
 	<div id="home-main-content">
-		<img id="perfil-icon" src="./content/img/duckafire-perfil-icon.png">
+		<img id="perfil-icon" class="cursor-hand" src="./content/img/duckafire-perfil-icon.png">
 		<div id="hello-world" class="drawer">
 			<h3>Hello World!</h3>
 		</div>
