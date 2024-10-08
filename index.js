@@ -19,9 +19,11 @@ if(PageValues.language){
 	LanguageEN(TextContent);
 }
 
-const BurgerMenu = document.getElementById("burger-menu");
-const Donate     = document.getElementById("donate");
-const GlobeLang  = document.getElementById("language");
+const BurgerMenu  = document.getElementById("burger-menu");
+const BurgerBg    = document.getElementById("burger-menu-background");
+const BurgerPanel = document.getElementById("burger-menu-panel");
+const Donate      = document.getElementById("donate");
+const GlobeLang   = document.getElementById("language");
 
 const SocialMediaPanel = {
 	bg:    document.getElementById("social-panel-background"),
@@ -50,15 +52,25 @@ const DrawerContent = [
 
 DrawerContent[0].children[0].hidden = false;
 
+function CloseAllDrawer(){
+	for(let i = 0; i < 3; i++)
+		DrawerContent[i].children[1].hidden = true;
+}
+
+BurgerMenu.addEventListener("click", () => {
+	BurgerBg.hidden = false;
+	CloseAllDrawer();
+});
+BurgerBg.addEventListener("click", () => {BurgerBg.hidden = true;});
+BurgerPanel.addEventListener("click", (event) => {event.stopPropagation();});
 Donate.addEventListener("click", () => {window.open("https://github.com/sponsors/duckafire");});
 
 window.setInterval(SocialMediaPanel.iconAnim, 2500, SocialMediaPanel);
-SocialMediaPanel.bg.addEventListener(   "click", () => {SocialMediaPanel.bg.hidden = true; });
+SocialMediaPanel.bg.addEventListener("click", () => {SocialMediaPanel.bg.hidden = true; });
 SocialMediaPanel.shape.addEventListener("click", (event) => {event.stopPropagation();});
-SocialMediaPanel.icon.addEventListener( "click", () => {
-	SocialMediaPanel.bg.hidden = !SocialMediaPanel.bg.hidden;
-	for(let i = 0; i < 3; i++)
-		DrawerContent[i].children[1].hidden = true;
+SocialMediaPanel.icon.addEventListener("click", () => {
+	SocialMediaPanel.bg.hidden = false;
+	CloseAllDrawer();
 })
 
 for(let i = 0; i < 3; i++){

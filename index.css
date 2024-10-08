@@ -22,6 +22,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 body {
 	background-image: linear-gradient(0deg, #4f0000, #4f1f00, #4f4f00);
 	background-size: 100vw 100vh;
@@ -68,6 +72,25 @@ section.panel-align {
 	cursor: pointer;
 }
 
+div.panel-background {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100vw 100vh;
+	width: 100vw;
+	height: 100vh;
+	z-index: 2;
+}
+
+div.burger-menu-parts {
+	display: flex;
+	flex-direction: column;
+	height: 48.25vh;
+}
+
+div.burger-menu-parts a {
+	text-decoration: underline;
+}
+
 div#top-menu {
 	display: flex;
 	position: fixed;
@@ -93,15 +116,6 @@ div#top-menu-right {
 	justify-content: flex-end;
 }
 
-div#social-panel-background {
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.5);
-	background-size: 100vw 100vh;
-	width: 100vw;
-	height: 100vh;
-	z-index: 1;
-}
-
 div#social-panel-shape {
 	font-size: 17.4vw;
 	top: 16%;
@@ -121,6 +135,25 @@ div#social-panel-grid {
 	align-content: center;
 	height: 100%;
 	gap: 20%;
+}
+
+div#burger-menu-panel {
+	background-color: var(--color-panel);
+	width: 60%;
+	height: 96.5vh;
+	z-index: 2;
+	padding: 1.75vh;
+}
+
+div#burger-menu-top {
+	font-size: 1.2rem;
+	gap: 5px;
+}
+
+div#burger-menu-bottom {
+	font-size: 0.8rem;
+	gap: 2.5px;
+	justify-content: flex-end;
 }
 
 img#perfil-icon {
@@ -145,3 +178,4 @@ div#projects-content-links {
 	margin: 2rem 0px 0.875rem 0px;
 	font-size: 1.2rem;
 }
+
