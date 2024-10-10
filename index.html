@@ -7,9 +7,101 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- Content (co) -->
+
+<section id="co">
+	<img src="./img/duckafire-perfil-icon.png">
+
+	<section>
+		<h3 id="co-wh-button" class="co-drawer">Hello world!</h3>
+		<div class="co-content">
+			&emsp;Welcome to my nest!
+			<br>
+			&emsp;This was writted by the charming duck in the photo above :D
+			<br><br>
+			&emsp;My name is <strong>DuckAfire</strong>, I'm an indie game developer
+			that love challenges and pixel art, I like <em>Lua</em> and
+			<strong>love</strong> to hate <em>CSS</em>.
+			<br><br>
+			&emsp;Here in this website you can to find <strong>all</strong> about
+			my work, like links, changelogs and other similar.
+		</div>
+	</section>
+		
+	<section id="co-projects">
+		<h3 id="co-pr-button" class="co-drawer">Projects</h3>
+		<div class="co-drawer-content" hidden>
+			&emsp;Do not hesitate in click in the links on below to get detailed
+			informations about each one of the projects.
+			<br><br>
+			<ul>
+				<li><a target="_blank" href="https://tic80.com/play?cart=3315">Legendary Champion: Rebirth</a></li>
+				<li><a target="_blank" href="https://github.com/duckafire/TinyLibrary">TinyLibrary</a></li>
+				<li><a target="_blank" href="https://github.com/duckafire/LIM">Lim - Lua Library Compactor</a></li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id="co-last-news">
+		<h3 id="co-ln-button" class="co-drawer">Last news</h3>
+		<div class="co-drawer-content" hidden>
+			&emsp;After a long wait period, finaly it arrive! <strong>Legendary
+			Champion <u>v3.0.2</u></strong>!! An update that arrive to easily
+			the creation of NEW updates, become the somethings more beatiful
+			and become the life of <em>our</em> little "astronaut"
+			<strong>more hard!</strong>.
+			<br><br>
+			<ul>
+				<li>The main changes of this update include:</li>
+				<ul>
+					<li>Remork in Observer and Supervisor <em>AI</em></li>
+					<li>NEW sound effects (+pleasant)</li>
+					<li>Several small visual improves and fixed</li>
+					<li>Technical improves and fixes</li>
+					<li>Optimization</li>
+					<li><strong>And MORE!</strong</li>
+				</ul>
+			</ul>
+		</div>
+	</section>
+</section>
+
+	<!-- Navigation Bar (nb) -->
+	<!-- Burger Menu (bm) -->
+	<!-- Social Media (sm) -->
+	<!--
+	<section id="sm-bg">
+		<div id="sm-panel">
+			<div>
+				<a href="https://">
+					<i class="fa- fa-"></i>
+					<p></p>
+				</a>
+			</div>
+			<div>
+				<a href="https://">
+					<i class="fa- fa-"></i>
+					<p></p>
+				</a>
+			</div>
+			<div>
+				<a href="https://">
+					<i class="fa- fa-"></i>
+					<p></p>
+				</a>
+			</div>
+			<div>
+				<a href="https://">
+					<i class="fa- fa-"></i>
+					<p></p>
+				</a>
+			</div>
+		</div>
+	</section>
 	<div id="social-panel-background" class="panel-background" hidden>
 		<div id="social-panel-shape">
 			<div id="social-panel-grid">
@@ -60,44 +152,9 @@
 		<div id="top-menu-right" class="top-menu-parts">
 			<i class="cursor-hand fa-brands fa-github" id="social-media"></i>
 			<i class="cursor-hand fa-solid fa-donate"  id="donate"></i>
-			<i class="cursor-hand fa-solid fa-globe"   id="language"></i>
-			<!--<i class="cursor-hand fa-solid fa-sun"></i>-->
 		</div>
 	</div>
-	<div id="home-main-content">
-		<img id="perfil-icon" class="cursor-hand" src="./content/img/duckafire-perfil-icon.png">
-		<section id="section-hello-world">
-			<div id="hello-world" class="drawer">
-				<h3 id="hello-world-title"></h3>
-			</div>
-			<div id="hello-world-panel" class="drawer-content" hidden>
-				<p id="hello-world-content"></p>
-			</div>
-		</section>
-		<section id="section-projects">
-			<div id="projects" class="drawer">
-				<h3 id="projects-title"></h3>
-			</div>
-			<div id="projects-panel" class="drawer-content" hidden>
-				<p id="projects-content"></p>
-				<div id="projects-content-links">
-					<a href="https://">Legendary Champion: Rebirth</a>
-					<a href="https://">TinyLibrary</a>
-					<a href="https://">Lim - <strong>L</strong>ua L<strong>i</strong>brary Co<strong>m</strong>pactor</a>
-				</div>
-			</div>
-		</section>
-		<section id="section-last-news">
-			<div id="last-news" class="drawer">
-				<h3 id="last-news-title"></h3>
-			</div>
-			<div id="last-news-panel" class="drawer-content" hidden>
-				<p id="last-news-content"></p>
-			</div>
-		</section>
-	</div>
+	-->
 </body>
-<script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
-<script src="textContent.js"></script>
-<script src="index.js"></script>
+<script src="events.js"></script>
 </html>
