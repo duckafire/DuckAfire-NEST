@@ -1,5 +1,4 @@
 /* TO TAGS */
-
 :root {
 	--color-font: #efefef;
 	--color-panel: #4a8a4a;
@@ -83,6 +82,7 @@ section#co img {
 	max-width: 350px;
 	border-radius: 50%;
 	border: 2.5px solid #dfdfdf;
+	cursor: pointer;
 }
 
 section#co img:active {
