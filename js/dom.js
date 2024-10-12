@@ -80,8 +80,8 @@
 
 	// add to html
 	bmDiv.appendChild(bm);
-	bm.appendChild(divXMark);
 	bm.appendChild(items);
+	bm.appendChild(divXMark);
 
 	// links
 	const titles = [
@@ -150,7 +150,7 @@
 
 			a = document.createElement("a");
 			a.textContent = titles[i][j];
-			a.target = "_black";
+			a.target = "_blank";
 			a.href = "https://github.com/duckafire/nest" + ((j == 1) ? "/blob/online/LICENSE" : "");
 
 			a.appendChild(li);
