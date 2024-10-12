@@ -38,7 +38,7 @@ a:hover {
 }
 
 li {
-	margin-bottom: 0.575rem;
+	padding-bottom: 0.575rem;
 }
 
 
@@ -112,6 +112,7 @@ section#lb {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	box-shadow: 0px 5vh 12.5vh var(--color-border);
 }
 
 i#lb-bmIcon {
@@ -138,4 +139,77 @@ i.lb-link-icon:hover {
 
 
 /* Burger Menu (bm) */
-section#bm {}
+.bm-on-screen {
+	top: 0px;
+	height: 100vh;
+	position: fixed;
+	overflow: scroll;
+}
+
+div#div-bm {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+section#bm {
+	width: 45%;
+	background-color: var(--color-panel);
+	box-shadow: 30px 0px 80px var(--color-border);
+}
+
+div#bm-div-x-mark {
+	display: flex;
+	width: 96%;
+	padding: 2%;
+	font-size: 8vw;
+	justify-content: flex-end;
+}
+
+section#bm i#bm-x-mark {
+	cursor: pointer;
+}
+
+div#bm-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90%;
+}
+
+section#bm ul {
+	list-style: none;
+	padding-left: 1rem;
+}
+
+ul#page-links {
+	font-size: 4.5vw;
+}
+
+ul#page-links li {
+	margin-bottom: 1rem;
+}
+
+ul#page-links li:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+ul#page-links li > span {
+	padding-left: 0.35rem;
+}
+
+ul#links-to-gh {
+	font-size: 0.8rem;
+}
+
+ul#links-to-gh a {
+	color: var(--color-font);
+}
+
+ul#links-to-gh a:hover {
+	color: var(--color-link);
+}
+
+ul#links-to-gh em {
+	cursor: default;
+}
