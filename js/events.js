@@ -29,7 +29,7 @@ PerfilIcon.addEventListener("click", () => {
 
 	for(let i = 0; i < 2; i++){
 		all = rootGet.getPropertyValue("--color-" + panel[i]);
-		if((i == 0 && all == "#df4049") || (i == 1 && all == "#af3017")) continue;
+		if((i == 0 && all.slice(1, 3) == "ce") || (i == 1 && all.slice(1, 3) == "83")) continue;
 		getRGB()
 
 		red   = red   + 4;
@@ -45,7 +45,7 @@ PerfilIcon.addEventListener("click", () => {
 	}
 
 	all = rootGet.getPropertyValue("--color-link");
-	if(all != "#8dff30"){
+	if(all.slice(1, 3) != "8d"){
 		getRGB();
 
 		red   = red   - 2;

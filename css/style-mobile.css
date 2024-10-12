@@ -1,10 +1,10 @@
 /* TO TAGS */
-:root {
-	--color-font: #efefef;
-	--color-panel: #4a8a4a;
-	--color-sub-panel: #175717;
-	--color-border: #000;
-	--color-link: #ff9900;
+:root { /* no spaces after ':' */
+	--color-font:#efefef;
+	--color-panel:#4a8a4a;
+	--color-sub-panel:#175717;
+	--color-border:#000;
+	--color-link:#ff9900;
 }
 
 * {
