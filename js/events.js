@@ -1,17 +1,3 @@
-const CO = [
-	document.getElementById("co-wh-button"),
-	document.getElementById("co-pr-button"),
-	document.getElementById("co-ln-button"),
-];
-
-CO[0].hidden = false;
-
-for(let i = 0; i < 3; i++){
-	CO[i].addEventListener("click", (event) => {
-		event.currentTarget.parentNode.children[1].hidden = !event.currentTarget.parentNode.children[1].hidden;
-	});
-}
-
 const PerfilIcon = document.getElementById("co").children[0];
 PerfilIcon.addEventListener("click", () => {
 	let panel = ["panel", "sub-panel"];

@@ -89,6 +89,15 @@ section#co img:active {
 	transform: scale(99%, 99%);
 }
 
+section#co details > summary::-webkit-details-marker {
+	display: none;
+}
+
+section#co details > summary {
+	list-style: none;
+	outline: none;
+}
+
 
 
 /* Link Bar (lb) */
