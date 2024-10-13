@@ -85,11 +85,11 @@
 
 	// links
 	const titles = [
-		["News", "Changelogs"],
+		["Home", "News", "Changelogs"],
 		["Repository", "License", "By DuckAfire"]
 	];
 
-	const faToLinks = ["newspaper", "file"];
+	const faToLinks = ["home", "newspaper", "file"];
 
 	const links = ["page-links", "links-to-gh"]
 
@@ -117,16 +117,25 @@
 
 			// click events
 			if(i == 0){
+				function update(a, b, c){
+					if(a.style.display == "flex") return;
+					a.style.display = "flex";
+					b.style.display = "none";
+					c.style.display = "none";
+
+					bmDiv.hidden = true;
+					bm.hidden = true;
+				}
+
 				switch(j){
-					case 0: // news
-						li.addEventListener("click", () => {
-							location.reload();
-						});
+					case 0: // home
+						li.addEventListener("click", () => {update(CO, NE, CH);});
 						break;
-					case 1: // changelogs
-						li.addEventListener("click", () => {
-							location.reload();
-						});
+					case 1: // news
+						li.addEventListener("click", () => {update(NE, CO, CH);});
+						break;
+					case 2: // changelogs
+						li.addEventListener("click", () => {update(CH, CO, NE);});
 						break;
 				}
 			}
@@ -160,3 +169,64 @@
 		items.appendChild(ul);
 	}
 })();
+
+// NEW AND CHANGELOGS
+(function(){
+	let details = null, summary = null, h2 = null, divBg = null, divCtt = null;
+
+	function blank(secId){
+		divBg = document.createElement("div");
+		divBg.style.height = "6vh";
+		document.getElementById(secId).appendChild(divBg);
+	}
+
+	function newItem(secId, title, content){
+		details = document.createElement("details");
+		summary = document.createElement("summary");
+		h2      = document.createElement("h2");
+		divBg   = document.createElement("div");
+		divCtt  = document.createElement("div");
+
+		h2.className     = "details-title";
+		divBg.className  = "details-container";
+		divCtt.className = "details-content";
+
+		h2.textContent = title;
+		divCtt.textContent = content;
+
+		divBg.appendChild(divCtt);
+		summary.appendChild(h2);
+		details.appendChild(summary);
+		details.appendChild(divBg);
+		document.getElementById(secId).appendChild(details);
+	}
+
+	let ids    = ["ne", "ch"];
+	let titles = ["news ", "changelogs "];
+
+	for(let i = 0; i < 2; i++){
+		blank(ids[i]);
+
+		for(let j = 0; j < 5; j++){
+			newItem(ids[i], titles[i] + j.toString(),
+				"Lorem ipsum senectus ante nam ligula orci rutrum" +
+				"lacus, nulla posuere velit ut tincidunt eleifend" +
+				"lacus blandit maecenas, est duis magna fames" +
+				"tortor adipiscing magna. vehicula platea dolor at" +
+				"pellentesque lectus viverra ante eros, id torquent" +
+				"donec lobortis tristique placerat ut diam proin," +
+				"rutrum convallis a tortor duis ut vehicula. ut" +
+				"mollis sed tincidunt a rutrum purus laoreet vivamus" +
+				"lacus aenean nisi dolor purus dapibus ultricies sit," +
+				"nisl inceptos convallis vivamus sociosqu lacinia" +
+				"primis turpis pretium eget aenean hendrerit posuere" +
+				"scelerisque. vestibulum convallis sagittis ut nibh" +
+				"vehicula ligula non laoreet massa, ligula nullam ac" +
+				"justo taciti ullamcorper aenean justo nam quisque," +
+				"faucibus viverra felis cras himenaeos aenean at" +
+				"faucibus."
+			);
+		}
+	}
+})();
+

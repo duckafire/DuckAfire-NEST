@@ -1,3 +1,11 @@
+const CO = document.getElementById("co");
+const NE = document.getElementById("ne");
+const CH = document.getElementById("ch");
+
+CO.style.display = "flex"
+NE.style.display = "none"
+CH.style.display = "none"
+
 const PerfilIcon = document.getElementById("co").children[0];
 PerfilIcon.addEventListener("click", () => {
 	let panel = ["panel", "sub-panel"];
