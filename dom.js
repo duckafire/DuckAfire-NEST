@@ -190,15 +190,37 @@ const lorem =
 "faucibus.";
 
 function getNews(ttlID){
-	let content = [
-		[
-			"news 1",
-			lorem
+	let content = [[
+			"[2024/10/05] Legendary Champion v3.0.2",
+			"After a long wait period, finaly it arrive! Legendary " +
+			"Champion v3.0.2!! An update that arrive to easily the " +
+			"creation of NEW updates, become the somethings more " +
+			"beatiful and become the life of our little \"astronaut\" " +
+			"more hard!."
 		], [
-			"news 2",
-			lorem
-		]
-	];
+			"[2024/09/01] TinyLibrary (v4.0.0): A New Face",
+			"The biggest update of the TinyLibrary (so far) WAS " +
+			"ARRIVE! TOTAL refatoration, new resource were implemented, " +
+			"old resources were improved, the error messages become more " +
+			"specifies, all were become cleaner and of easy understanding."
+		], [
+			"[2024/07/13] Lim version v0.1.11",
+			"The new stable version of the Lim is avaliable. Several " +
+			"resources are implemented and bugs were fixes. Now it is " +
+			"possible \"protect\" functions names and a lot of other things. " +
+			"Create tiny libraries is more easy."
+		], [
+			"[2024/07/09] Legendary Champion version v3.0.1",
+			"A lot of new content were come to the game! New sound effects, " +
+			"adjustments, bug fixes and MANY MORE. Play the new update in my " +
+			"page on Tic80!"
+		], [
+			"[2024/06/22] The REBIRTH of Legendary AMONGUS",
+			"This update is a BIG rework of the game. Enemies given a new AI, " +
+			"maps given new layouts, the animations are most beatiful, the game " +
+			"was renamed and MORE. All game code was re-writed from ZERO, but all " +
+			"essence was maintained."
+	]];
 	if(ttlID == undefined)
 		return content.length;
 
