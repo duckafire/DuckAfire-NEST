@@ -101,6 +101,8 @@
 		ul.id = links[i];
 		
 		for(let j = 0; j < titles[i].length; j++){
+			if(j == 2 && i == 0) break;
+
 			// to other content in self site
 			li = document.createElement("li");
 
