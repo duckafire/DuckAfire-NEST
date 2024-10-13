@@ -171,16 +171,64 @@
 })();
 
 // NEW AND CHANGELOGS
+const lorem =
+"Lorem ipsum senectus ante nam ligula orci rutrum" +
+"lacus, nulla posuere velit ut tincidunt eleifend" +
+"lacus blandit maecenas, est duis magna fames" +
+"tortor adipiscing magna. vehicula platea dolor at" +
+"pellentesque lectus viverra ante eros, id torquent" +
+"donec lobortis tristique placerat ut diam proin," +
+"rutrum convallis a tortor duis ut vehicula. ut" +
+"mollis sed tincidunt a rutrum purus laoreet vivamus" +
+"lacus aenean nisi dolor purus dapibus ultricies sit," +
+"nisl inceptos convallis vivamus sociosqu lacinia" +
+"primis turpis pretium eget aenean hendrerit posuere" +
+"scelerisque. vestibulum convallis sagittis ut nibh" +
+"vehicula ligula non laoreet massa, ligula nullam ac" +
+"justo taciti ullamcorper aenean justo nam quisque," +
+"faucibus viverra felis cras himenaeos aenean at" +
+"faucibus.";
+
+function getNews(ttlID){
+	let content = [
+		[
+			"news 1",
+			lorem
+		], [
+			"news 2",
+			lorem
+		]
+	];
+	if(ttlID == undefined)
+		return content.length;
+
+	return content[ttlID];
+}
+
+function getChangelogs(ttlID, cttID){
+	let content = [[
+			["DETAILS 0", lorem]
+			["DETAILS 1", lorem],
+			["DETAILS 2", lorem],
+		], [
+			["DETAILS 0", lorem],
+			["DETAILS 1", lorem],
+			["DETAILS 2", lorem],
+		], [
+			["DETAILS 0", lorem],
+			["DETAILS 1", lorem],
+			["DETAILS 2", lorem],
+	]];
+	if(cttID == undefined)
+		return content[ttlID].length;
+
+	return content[ttlID][cttID];
+}
+
 (function(){
-	let details = null, summary = null, h2 = null, divBg = null, divCtt = null;
+	let details, summary, subDet, subSum, h2, divBg, divCtt, span, p, bothTextContent;
 
-	function blank(secId){
-		divBg = document.createElement("div");
-		divBg.style.height = "6vh";
-		document.getElementById(secId).appendChild(divBg);
-	}
-
-	function newItem(secId, title, content){
+	function newItem(id, nid, title, content){
 		details = document.createElement("details");
 		summary = document.createElement("summary");
 		h2      = document.createElement("h2");
@@ -191,42 +239,64 @@
 		divBg.className  = "details-container";
 		divCtt.className = "details-content";
 
-		h2.textContent = title;
-		divCtt.textContent = content;
-
 		divBg.appendChild(divCtt);
 		summary.appendChild(h2);
 		details.appendChild(summary);
 		details.appendChild(divBg);
-		document.getElementById(secId).appendChild(details);
-	}
+		document.getElementById(id).appendChild(details);
 
-	let ids    = ["ne", "ch"];
-	let titles = ["news ", "changelogs "];
+		// news
+		h2.textContent = title;
+		if(content != undefined){
+			divCtt.textContent = content;
+			return;
+		}
 
-	for(let i = 0; i < 2; i++){
-		blank(ids[i]);
+		// chagelogs
+		for(let i = 0; i < getChangelogs(nid); i++){
+			subDet = document.createElement("details");
+			subSum = document.createElement("summary");
+			span   = document.createElement("span");
+			p      = document.createElement("p");
+			
+			span.className = "sub-details-title";
+			p.className    = "sub-details-content";
 
-		for(let j = 0; j < 5; j++){
-			newItem(ids[i], titles[i] + j.toString(),
-				"Lorem ipsum senectus ante nam ligula orci rutrum" +
-				"lacus, nulla posuere velit ut tincidunt eleifend" +
-				"lacus blandit maecenas, est duis magna fames" +
-				"tortor adipiscing magna. vehicula platea dolor at" +
-				"pellentesque lectus viverra ante eros, id torquent" +
-				"donec lobortis tristique placerat ut diam proin," +
-				"rutrum convallis a tortor duis ut vehicula. ut" +
-				"mollis sed tincidunt a rutrum purus laoreet vivamus" +
-				"lacus aenean nisi dolor purus dapibus ultricies sit," +
-				"nisl inceptos convallis vivamus sociosqu lacinia" +
-				"primis turpis pretium eget aenean hendrerit posuere" +
-				"scelerisque. vestibulum convallis sagittis ut nibh" +
-				"vehicula ligula non laoreet massa, ligula nullam ac" +
-				"justo taciti ullamcorper aenean justo nam quisque," +
-				"faucibus viverra felis cras himenaeos aenean at" +
-				"faucibus."
-			);
+			subSum.appendChild(span);
+			subDet.appendChild(subSum);
+			subDet.appendChild(p);
+			divCtt.appendChild(subDet);
+
+			bothTextContent  = getChangelogs(nid, i);
+			span.textContent = bothTextContent[0];
+			p.textContent    = bothTextContent[1];
 		}
 	}
+
+	// void spaces
+	let ids = ["ne", "ch"];
+	for(let i = 0; i < ids.length; i++){
+		divBg = document.createElement("div");
+		divBg.style.height = "6vh";
+		document.getElementById(ids[i]).appendChild(divBg);
+	}
+
+	// news
+	let txt = null;
+	for(let i = 0; i < getNews(); i++){
+		txt = getNews(i);
+		newItem("ne", 2, txt[0], txt[1]);
+	}
+
+
+	// changelogs
+	let titles = [
+		"Legendary Champion: Rebirth",
+		"TinyLibrary",
+		"Lim - Lua Library Compactor"
+	];
+
+	for(let i = 0; i < titles.length; i++)
+		newItem("ch", 2, titles[i]);
 })();
 

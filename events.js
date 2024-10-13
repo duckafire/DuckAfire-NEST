@@ -54,3 +54,29 @@ PerfilIcon.addEventListener("click", () => {
 		rootSet.style.setProperty("--color-link", all);
 	}
 });
+
+(function(){
+	let subTitles = [
+		"Hello world!",
+		"Try a fire resistance potion",
+		"Very SUS",
+		"Why are you reading this?",
+		"Like a duck",
+		"Any and all donation is welcome :D",
+		"*quak*",
+		"This is a easter egg!",
+		"The floor is lava!",
+		"HTML and CSS are not programming languages!",
+		"DON'T TRY CSS!!",
+		"This place is \"strange\"...",
+		"It is only one page",
+		"C is a big mother",
+		"Lua is nice",
+		"DOOM 1993!",
+		"DOM 1990!",
+	];
+
+	let id = Math.floor(Math.random() * subTitles.length);
+	const title = document.getElementById("page-title");
+	title.textContent = title.textContent + ": " + subTitles[id];
+})();

@@ -69,6 +69,19 @@ div.details-content {
 	border-radius: 10px;
 }
 
+span.sub-details-title {
+	display: block;
+	text-align: center;
+	font-size: 1.325rem;
+	margin-bottom: 2rem;
+	text-decoration: underline;
+}
+
+p.sub-details-content {
+	display: block;
+	margin: -1.75rem 0px 2rem 0px;
+}
+
 section.page-root {
 	gap: 5vh;
 	top: 16.9vh;
