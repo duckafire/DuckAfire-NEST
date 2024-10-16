@@ -15,9 +15,11 @@
 	color: var(--color-font);
 	z-index: 0;
 	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
 }
 
 body {
+	min-width: 225px;
 	background-image: linear-gradient(0deg, #4f0000, #4f1f00, #4f4f00);
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
@@ -47,6 +49,7 @@ li {
 h2.details-title, h3.details-title {
 	cursor: pointer;
 	width: 95vw;
+	min-width: 254.6px;
 	display: block;
 	text-align: center;
 	background-color: var(--color-panel);
@@ -63,6 +66,7 @@ div.details-container {
 }
 
 div.details-content {
+	min-width: 213.75px;
 	margin: auto;
 	max-width: 700px;
 	align-content: center;
@@ -83,12 +87,13 @@ p.sub-details-content {
 }
 
 section.page-root {
-	gap: 5vh;
-	top: 16.9vh;
+	gap: 26px;
+	top: max(16.9vh, 55px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0px 2.5vw 2.5vw 2.5vw;
+	padding: 2.5vw;
+	padding-top: 0px;
 }
 
 
@@ -117,7 +122,8 @@ section#lb {
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	height: 10vh;
+	min-width: 225px;
+	height: 5vh;
 	min-height: 38px;
 	position: fixed;
 	background-color: var(--color-panel);
@@ -129,7 +135,7 @@ section#lb {
 }
 
 section#lb i {
-	font-size: max(6vh, 17px);
+	font-size: max(min(6vh, 27px), 17px);
 }
 
 i#lb-bmIcon {
@@ -139,7 +145,7 @@ i#lb-bmIcon {
 div#lb-links {
 	display: flex;
 	justify-content: flex-end;
-	gap: 4.25vw;
+	gap: max(min(4.25vw, 12px), 6px);
 }
 
 a.lb-link {
@@ -167,6 +173,7 @@ div#div-bm {
 
 section#bm {
 	width: 45%;
+	min-width: 126px;
 	max-width: 310px;
 	background-color: var(--color-panel);
 	box-shadow: 30px 0px 80px var(--color-border);
@@ -178,13 +185,13 @@ div#bm-div-x-mark {
 	display: flex;
 	width: 96%;
 	padding: 4% 2% 2% 2%;
-	font-size: 250%;
 	justify-content: flex-end;
 	pointer-events: none;
 }
 
 i#bm-x-mark {
 	top: 0px;
+	font-size: max(3vw + 4vh, 25px);
 	cursor: pointer;
 	pointer-events: auto;
 }
@@ -194,10 +201,13 @@ div#bm-items {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100vh;
-	padding-top: 9vh;
+	min-height: 185px;
+	padding-top: max(9vh, 28px);
 }
 
 section#bm ul {
+	display: inline-block;
+	width: 100%;
 	list-style: none;
 	padding-left: 1rem;
 }
@@ -223,6 +233,11 @@ ul#page-links li {
 ul#page-links li > span {
 	padding: 0px;
 	margin-left: 0.35rem;
+	font-size: max(min(5vw, 30px), 16px);
+}
+
+ul#page-links li > i {
+	font-size: max(min(5vw, 30px), 16px);
 }
 
 ul#links-to-gh {
@@ -236,6 +251,7 @@ ul#links-to-gh li {
 
 ul#links-to-gh a {
 	color: var(--color-font);
+	font-size: max(min(1.5vw, 15px), 11.25px);
 }
 
 ul#links-to-gh a:hover {
@@ -244,4 +260,5 @@ ul#links-to-gh a:hover {
 
 ul#links-to-gh em {
 	cursor: default;
+	font-size: max(min(1.5vw, 15px), 11.25px);
 }
