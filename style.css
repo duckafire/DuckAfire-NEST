@@ -20,6 +20,7 @@ body{
 	padding: 5vh 5vw 5vh 5vw;
 	margin: 0px;
 	box-sizing: border-box;
+	min-width: 150px;
 }
 
 
@@ -30,7 +31,7 @@ div#projects-more-icon{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: min(max(25vh, 100px), 8.3rem);
+	height: min(max(30vh, 100px), 6.4rem);
 	background-color: #fff;
 	background-color: var(--color-pp-bg);
 	border-radius: 10px;
@@ -40,15 +41,15 @@ div#projects-more-icon div{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: min(max(20vw, 50px), 7.5rem);
-	height: min(max(20vw, 50px), 7.5rem);
+	width: max(8vh, 80px);
+	height: max(8vh, 80px);
 	background-color: #eee;
 	border: 1px solid #000;
 	border-radius: 50%;
 }
 
 div#projects-more-icon i{
-	font-size: min(max(20%, 50px), 7.5rem);
+	font-size: min(max(20%, 50px), 7.25rem);
 }
 
 .projects-panel-layout{
@@ -74,6 +75,10 @@ div.project-box img{
 	width: min(max(40%, 100px), 15rem);
 	height: min(max(40%, 100px), 15rem);
 	margin: 1.75vh 1.75vw -0.3rem 1.75vw;
+}
+
+div.project-box div > p{
+	max-width: 750px;
 }
 
 div.project-link{
