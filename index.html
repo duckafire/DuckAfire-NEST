@@ -14,46 +14,52 @@
 	<script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<section id="profile-info" class="default-body">
-		<span id="profile-icon-and-languages">
-			<img id="profile-icon" src="./img/duckafire-perfil-icon.png">
-			<section id="programming-highlight">
-				<img title="Lua" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg"/>
-				<img title="C" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"/>
-				<img title="Git" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
-			</section>
-			<section id="programming-hidded" hidden>
-				<div id="programming-languages">
-					<div id="programming-languages-mark">
-						<img title="HTML5" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
-						<img title="CSS3" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
-						<img title="Markdown" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" />
-					</div>
-					<div id="programming-languages-prog">
-						<img title="JavaScript" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-						<img title="C" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"/>
-						<img title="C++" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"/>
-						<img title="Lua" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg"/>
-					</div>
-				</div>
-				<div id="programming-tools">
-					<img title="Git" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
-					<img title="Debian" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg" />
-					<img title="GCC" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gcc/gcc-original.svg" />
-					<img title="CMake" class="programming-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cmake/cmake-original.svg" />
-				</div>
-			</section>
-		</span>
-		<div>
-			<h2>Olá mundo!</h2>
-			<p>Salve! Aqui quem escreve é o pato charmoso na foto ;)</p>
-			<p>Seja bem vindo ao meu ninho! Aqui você tem acesso a <strong>TODOS</strong> os meus trabalhos relacionados ao mundo da programação.</p>
-			<p>Fique a vontade UwU</p>
-		</div>
-	</section>
-	<section id="body-bottom" class="default-body">
-		<section id="main-projects">
-		</section>
-	</section>
+	<!-- FROM dom.js -->
+	<section id="projects"></section>
+
 <script src="./dom.js"></script>
+
+<!-- USE ELEMENTS FROM DOM -->
+<script>
+
+// newProjectPanel: img, title, description, links (address, icon from Font Awesome, text)
+
+newProjectPanel(
+	"legendary-champion-cover",
+	"Legendary Champion: Rebirth",
+	"Entre na A Arena e megulher em um desafrio frenético, onde seu "+
+	"único objetivo é proteger as suas CARGAS. Fuja e esconda-se de inimigos "+
+	"únicos e incansáveis. Corra em direção a glória da vitória!",
+	[
+	["tic80.com/play?cart=3315",               "fa-solid fa-gamepad",  "Jogue em tic80.com"],
+	["duckafire.itch.io/legendary-champion",   "fa-brands fa-itch-io", "Jogue em itch.io"],
+	]
+);
+
+newProjectPanel(
+	"tinylibrary-icon",
+	"Tiny Library",
+	"Esta é uma coleção de bibliotecas gratuitas e de código aberto, criada "+
+	"para facilitar a criação de novos cartuchos para o Tic80 Tiny Computer.",
+	[
+	["github.com/duckafire/TinyLibrary",      "fa-solid fa-folder", "Repositório"],
+	["github.com/duckafire/TinyLibrary/wiki", "fa-solid fa-book",   "Wiki oficial"],
+	["tic80.com",                             "fa-solid fa-book",   "Tic80"]
+	]
+);
+
+newProjectPanel(
+	"lim-icon",
+	"Lim",
+	"Lua library compactor (compactador de bibliotecas Lua) é um pequeno "+
+	"programa de terminal, criado para facilitar a compactação de bibliotecas "+
+	"Lua [para o projeto TinyLibrary] em um formato apelidade de Pacote Local.",
+	[
+	["github.com/duckafire/LIM",      "fa-solid fa-folder", "Repositório"],
+	["github.com/duckafire/LIM/wiki", "fa-solid fa-book",   "Wiki oficial"],
+	["lua.org",                       "fa-solid fa-book",   "Linguagem Lua"],
+	]
+);
+</script>
+
 </body>

@@ -1,4 +1,10 @@
+/* NOTES */
 /* top left bottom right */
+
+
+
+/* ELEMENTS */
+
 body{
 	background-color: #777;
 	width: 100vw;
@@ -8,45 +14,15 @@ body{
 	box-sizing: border-box;
 }
 
-.default-body{
-	margin: 2.5vh 0px 5vh 0px;
-	box-sizing: border-box;
-}
 
-section#programming-highlight{
-	display: flex;
-	flex-direction: row;
-	gap: 2.31vw;
-	width: 70%;
-}
 
-span#profile-icon-and-languages{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 5vw;
-}
+/* PROJECTS */
 
-img.programming-icon{
-	width: 17.5%;
-	height: 17.5%;
-}
-img#profile-icon{
-	width: 30%;
-	height: 30%;
-	border-radius: 50%;
-	border: 1px solid #000;
-}
-section#profile-info{
-	background-color: #999;
-	border-radius: 10px;
-	padding: 2vh 2vw 2vh 2vw;
-}
-
-section#main-projects{
+section#projects{
 	display: flex;
 	flex-direction: column;
 	gap: 3.25vh;
+	margin-bottom: 5vh;
 }
 
 div.project-box{
@@ -62,8 +38,8 @@ div.project-box{
 }
 
 div.project-box img{
-	width: max(50%, 200px);
-	height: max(50%, 200px);
+	width: min(max(40%, 100px), 15rem);
+	height: min(max(40%, 100px), 15rem);
 	margin: 1.75vh 1.75vw -0.3rem 1.75vw;
 }
 
