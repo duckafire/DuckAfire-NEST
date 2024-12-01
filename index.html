@@ -14,16 +14,22 @@
 	<script src="https://kit.fontawesome.com/7d914c2988.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<!-- FROM dom.js -->
-	<section id="projects"></section>
+	<section id="projects-interface">
+		<!-- FROM dom.js -->
+		<div id="projects-main" class="projects-panel-layout"></div>
+		<div id="projects-more" class="projects-panel-layout"></div>
+	</section>
 
+<script src="./const.js"></script>
 <script src="./dom.js"></script>
+<script src="./events.js"></script>
 
 <!-- USE ELEMENTS FROM DOM -->
 <script>
 
 // newProjectPanel: img, title, description, links (address, icon from Font Awesome, text)
 
+for(let i = 0; i < 3; i++){
 newProjectPanel(
 	"legendary-champion-cover",
 	"Legendary Champion: Rebirth",
@@ -60,6 +66,9 @@ newProjectPanel(
 	["lua.org",                       "fa-solid fa-book",   "Linguagem Lua"],
 	]
 );
+}
+
+createProjectsMoreButton()
 </script>
 
 </body>

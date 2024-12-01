@@ -1,12 +1,20 @@
 /* NOTES */
 /* top left bottom right */
 
+:root{
+	/* specify elements */
+	--color-body:#777;
+	/* Project Panel */
+	--color-pp-bg:#999;
+	--color-pp-link:#00c;
+}
+
 
 
 /* ELEMENTS */
 
 body{
-	background-color: #777;
+	background-color: var(--color-body);
 	width: 100vw;
 	height: 100vh;
 	padding: 5vh 5vw 5vh 5vw;
@@ -18,18 +26,43 @@ body{
 
 /* PROJECTS */
 
-section#projects{
+div#projects-more-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: min(max(25vh, 100px), 8.3rem);
+	background-color: #fff;
+	background-color: var(--color-pp-bg);
+	border-radius: 10px;
+}
+
+div#projects-more-icon div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: min(max(20vw, 50px), 7.5rem);
+	height: min(max(20vw, 50px), 7.5rem);
+	background-color: #eee;
+	border: 1px solid #000;
+	border-radius: 50%;
+}
+
+div#projects-more-icon i{
+	font-size: min(max(20%, 50px), 7.5rem);
+}
+
+.projects-panel-layout{
 	display: flex;
 	flex-direction: column;
 	gap: 3.25vh;
-	margin-bottom: 5vh;
+	margin-bottom: 3.25vh;
 }
 
 div.project-box{
 	display: flex;
 	flex-direction: column;
 	gap: 2.5vw;
-	background-color: #999;
+	background-color: var(--color-pp-bg);
 	border-radius: 10px;
 	padding: 0.5vh 1.25vw 3.5vh 1.25vw;
 	align-items: center;
@@ -51,7 +84,7 @@ div.project-link{
 }
 
 div.project-link a{
-	color: #00c;
+	color: var(--color-pp-link);
 	text-decoration: none;
 	font-size: 1.2rem;
 	display: flex;

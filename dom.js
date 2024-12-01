@@ -1,7 +1,3 @@
-const PROJECT_BODY = document.getElementById("projects");
-const PROJECT_BODY_BOX_CLASS  = "project-box";
-const PROJECT_BODY_LINK_CLASS = "project-link";
-
 function newProjectPanel(_img, _title, _descr, links){
 	// containers
 	let fullCtt = document.createElement("div");
@@ -47,5 +43,25 @@ function newProjectPanel(_img, _title, _descr, links){
 	fullCtt.appendChild(textCtt);
 	fullCtt.appendChild(linkCtt);
 
-	PROJECT_BODY.appendChild(fullCtt);
+	if(PROJECT_BODY.children.length < 3){
+		PROJECT_BODY.appendChild(fullCtt);
+		return;
+	}
+
+	fullCtt.style.display = "none";
+	PROJECT_BODY_MORE.appendChild(fullCtt);
+}
+
+function createProjectsMoreButton(){
+	let div0 = document.createElement("div");
+	let div1 = document.createElement("div");
+	let i    = document.createElement("i");
+
+	div0.id = "projects-more-icon";
+	div0.addEventListener("click", showMoreProjects);
+	i.className = "fa-solid fa-caret-down";
+
+	PROJECT_BODY_MORE.appendChild(div0);
+	div0.appendChild(div1);
+	div1.appendChild(i);
 }
