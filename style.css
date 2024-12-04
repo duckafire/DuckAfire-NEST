@@ -3,9 +3,9 @@
 
 :root{
 	/* specify elements */
-	--color-body:#777;
+	--color-all-font:#0f0f0f;
 	/* Project Panel */
-	--color-pp-bg:#999;
+	--color-pp-bg:#aaa;
 	--color-pp-link:#00c;
 }
 
@@ -14,13 +14,17 @@
 /* ELEMENTS */
 
 body{
-	background-color: var(--color-body);
+	color: var(--color-all-font);
+	font-family: sans-serif;
 	width: 100vw;
 	height: 100vh;
 	padding: 5vh 5vw 5vh 5vw;
 	margin: 0px;
 	box-sizing: border-box;
 	min-width: 150px;
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	background-image: linear-gradient(#d22, #dd2);
 }
 
 
@@ -44,7 +48,7 @@ div#projects-more-icon div{
 	width: max(8vh, 80px);
 	height: max(8vh, 80px);
 	background-color: #eee;
-	border: 1px solid #000;
+	border: 1.5px solid #000;
 	border-radius: 50%;
 }
 
@@ -69,6 +73,7 @@ div.project-box{
 	align-items: center;
 	text-align: center;
 	gap: 0px;
+	border: 3px solid black;
 }
 
 div.project-box img{
@@ -91,7 +96,7 @@ div.project-link{
 div.project-link a{
 	color: var(--color-pp-link);
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 0.95rem;
 	display: flex;
 	flex-direction: row;
 	gap: 0.4rem;

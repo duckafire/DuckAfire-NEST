@@ -77,6 +77,7 @@ function createProjectsMoreButton(){
 	const i    = document.createElement("i");
 
 	div0.id = "projects-more-icon";
+	div0.style.border = "3px solid black";
 	div0.addEventListener("click", showMoreProjects);
 	i.className = "fa-solid fa-caret-down";
 
