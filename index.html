@@ -24,17 +24,18 @@
 <script src="./dom.js"></script>
 <script src="./events.js"></script>
 
-<!-- USE ELEMENTS FROM DOM -->
+<!-- USE/CREATE ELEMENTS FROM DOM -->
 <script>
 
 // newProjectPanel: img, title, description, links (address, icon from Font Awesome, text)
 
 newProjectPanel(
-	"legendary-champion-cover",
+	"legendary-champion",
 	"Legendary Champion: Rebirth",
 	"Entre na A Arena e megulher em um desafrio frenético, onde seu "+
 	"único objetivo é proteger as suas CARGAS. Fuja e esconda-se de inimigos "+
 	"únicos e incansáveis. Corra em direção a glória da vitória!",
+	["lua"],
 	[
 	["tic80.com/play?cart=3315",               "fa-solid fa-gamepad",  "Jogue em tic80.com"],
 	["duckafire.itch.io/legendary-champion",   "fa-brands fa-itch-io", "Jogue em itch.io"],
@@ -42,10 +43,11 @@ newProjectPanel(
 );
 
 newProjectPanel(
-	"tinylibrary-icon",
+	"tinylibrary",
 	"Tiny Library",
 	"Esta é uma coleção de bibliotecas gratuitas e de código aberto, criada "+
 	"para facilitar a criação de novos cartuchos para o Tic80 Tiny Computer.",
+	["lua"],
 	[
 	["github.com/duckafire/TinyLibrary",      "fa-solid fa-folder",   "Repositório"],
 	["github.com/duckafire/TinyLibrary/wiki", "fa-solid fa-book",     "Wiki oficial"],
@@ -54,18 +56,44 @@ newProjectPanel(
 );
 
 newProjectPanel(
-	"lim-icon",
+	"lim",
 	"Lim",
 	"Lua library compactor (compactador de bibliotecas Lua) é um pequeno "+
 	"programa de terminal, criado para facilitar a compactação de bibliotecas "+
 	"Lua [para o projeto TinyLibrary] em um formato apelidade de Pacote Local.",
+	["c"],
 	[
 	["github.com/duckafire/LIM",      "fa-solid fa-folder", "Repositório"],
 	["lua.org",                       "fa-solid fa-file",   "Linguagem Lua"],
 	]
 );
 
-//createProjectsMoreButton()
+newProjectPanel(
+	"summaries",
+	"Resumos de bibliotecas",
+	"Este mini projeto consiste em uma pequena documentação, com explicações e "+
+	"exemplos minimalistas, referentes ao conteúdo de bibliotecas padrão. Seus "+
+	"intuito é descomplicar e centralizar tais informações.",
+	["markdown", "html5"],
+	[
+	["github.com/duckafire/Small_Projects/tree/main/summaries", "fa-solid fa-book", "Repositório"],
+	]
+);
+
+newProjectPanel(
+	"nest",
+	"Nest",
+	"Este é o projeto que você está usando neste momento (hehe)! Um pequena e "+
+	"minimalista página web, hospedada no GitHub Pages. Criada com o objetivo "+
+	"de conectar todos os meus trabalhos digitais.",
+	["html5", "css3", "javascript"],
+	[
+	["github.com/duckafire/nest", "fa-solid fa-folder", "Repositório"],
+	["docs.github.com/pt/pages",  "fa-solid fa-file",   "GitHub Pages"],
+	]
+);
+
+createProjectsMoreButton()
 </script>
 
 </body>

@@ -1,5 +1,5 @@
 /* NOTES */
-/* top left bottom right */
+/* top right bottom left */
 
 :root{
 	/* specify elements */
@@ -95,4 +95,22 @@ div.project-link a{
 	display: flex;
 	flex-direction: row;
 	gap: 0.4rem;
+}
+
+div#project-used-languages{
+	padding: 5px 5px 0px 0px;
+	position: absolute;
+	display: flex;
+	flex-direction: row-reverse;
+	width: 88vw;
+}
+
+div#project-used-languages div{
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+div#project-used-languages i{
+	font-size: 2rem;
 }
