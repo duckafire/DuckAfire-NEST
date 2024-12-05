@@ -29,6 +29,50 @@ body{
 
 
 
+/* ABOUT DUCKAFIRE */
+
+section#about-duckafire{
+	padding: 2.5%;
+	border-radius: 10px;
+	border: 3px solid black;
+	margin-bottom: 3.25vh;
+	background-color: var(--color-pp-bg);
+	padding: 2.5vh 2.5vw 2.5vh 2.5vw;
+}
+
+div#about-duckafire-main{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 3.25vw;
+	box-sizing: border-box;
+}
+
+img#about-duckafire-perfil{
+	width: min(max(21vw, 100px), 200px);
+	border-radius: 50%;
+	border: 2.5px solid black;
+}
+
+div#about-duckafire-languages-highlight{
+	display: flex;
+	justify-content: center;
+	gap: 1vw;
+	padding: 5px;
+	font-size: 1.55rem;
+}
+
+div#about-duckafire-texts h1{
+	margin: 0px;
+	margin-bottom: 0.3rem;
+}
+
+div#about-duckafire-texts p{
+	margin: 0px;
+}
+
+
+
 /* PROJECTS */
 
 div#projects-more-icon{
