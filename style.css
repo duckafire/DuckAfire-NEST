@@ -7,6 +7,10 @@
 	/* Project Panel */
 	--color-pp-bg:#aaa;
 	--color-pp-link:#00c;
+	/* Technolog level */
+	--color-tl-low:#f00;
+	--color-tl-middle:#ff0;
+	--color-tl-high:#0f0;
 }
 
 
@@ -42,24 +46,28 @@ section#about-duckafire{
 
 div#about-duckafire-main{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	gap: 3.25vw;
 	box-sizing: border-box;
 }
 
 img#about-duckafire-perfil{
-	width: min(max(21vw, 100px), 200px);
+	width: min(max(21vw, 100px), 150px);
 	border-radius: 50%;
 	border: 2.5px solid black;
 }
 
-div#about-duckafire-languages-highlight{
+div#about-duckafire-social{
 	display: flex;
 	justify-content: center;
-	gap: 1vw;
+	gap: 2vw;
 	padding: 5px;
 	font-size: 1.55rem;
+}
+
+div#about-duckafire-social a{
+	color: black;
 }
 
 div#about-duckafire-texts h1{
@@ -69,7 +77,50 @@ div#about-duckafire-texts h1{
 
 div#about-duckafire-texts p{
 	margin: 0px;
+	max-width: 300px;
 }
+
+h5#about-duckafire-more-button{
+	margin: 0px;
+	text-align: center;
+	cursor: pointer;
+}
+
+div#about-duckafire-more span{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2vw;
+	justify-content: center;
+}
+
+div#about-duckafire-more span > img{
+	width: min(max(8%, 35px), 50px);
+}
+
+img.tl-low, img.tl-middle, img.tl-high{
+	border-radius: 15px;
+	padding: 4px;
+	border: 3px solid;
+}
+
+img.tl-low{    border-color: var(--color-tl-low); }
+img.tl-middle{ border-color: var(--color-tl-middle); }
+img.tl-high{   border-color: var(--color-tl-high); }
+
+div#about-duckafire-tech-legend{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 5vw 0px 5vw;
+}
+
+div#about-duckafire-tech-legend h5{
+	margin: 0px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+h5#about-duckafire-tech-legendy-low{    color: var(--color-tl-low); }
+h5#about-duckafire-tech-legendy-middle{ color: var(--color-tl-middle); }
+h5#about-duckafire-tech-legendy-high{   color: var(--color-tl-high); }
 
 
 
@@ -127,7 +178,7 @@ div.project-box img{
 }
 
 div.project-box div > p{
-	max-width: 750px;
+	max-width: 600px;
 }
 
 div.project-link{

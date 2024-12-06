@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="darkreader-lock">
 	<title id ="page-title">DuckAfire's Nest</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +18,28 @@
 	<section id="about-duckafire">
 		<div id="about-duckafire-main">
 			<div id="about-duckafire-images">
-				<img id="about-duckafire-perfil" src="./img/duckafire-perfil-icon.png">
-				<div id="about-duckafire-languages-highlight" title="Tecnologias que eu +uso">
-					<i class="devicon-lua-plain"></i>
-					<i class="devicon-c-plain"></i>
-					<i class="devicon-git-plain"></i>
+				<img id="about-duckafire-perfil" src="./img/duckafire-perfil-icon.png" onclick="hideSocialIcons()">
+				<div id="about-duckafire-social">
+					<a title="GitHub"   href="https://github.com/duckafire"  ><i class="fa-brands fa-github"  ></i></a>
+					<a title="Itch.io"  href="https://duckafire.itch.io"     ><i class="fa-brands fa-itch-io" ></i></a>
+					<a title="Facebook" href="https://facebook.com/duckafire"><i class="fa-brands fa-facebook"></i></a>
 				</div>
+				<h5 id="about-duckafire-more-button" onclick="showMoreInfoAboutDuck()">ver mais</h5>
 			</div>
 			<div id="about-duckafire-texts">
 				<h1><strong>Olá mundo!</strong></h1>
 				<p>
 					&emsp;Bem vindo ao meu ninho. Você pode me chamar de <em>DuckAfire</em>, sou um desenvolvedor <em>indie</em> em constante processo de apredizado.
 				</p>
+			</div>
+		</div>
+		<div id="about-duckafire-more" hidden>
+			<!-- FROM dom.js -->
+			<div id="about-duckafire-technologies"></div>
+			<div id="about-duckafire-tech-legend">
+				<h5 id="about-duckafire-tech-legendy-low">Raso</h5>
+				<h5 id="about-duckafire-tech-legendy-middle">Intermediário</h5>
+				<h5 id="about-duckafire-tech-legendy-high">Avançado</h5>
 			</div>
 		</div>
 	</section>
@@ -44,74 +55,79 @@
 
 <!-- USE/CREATE ELEMENTS FROM DOM -->
 <script>
+	// newProjectPanel: img, title, description, links (address, icon from Font Awesome, text)
 
-// newProjectPanel: img, title, description, links (address, icon from Font Awesome, text)
+	newProjectPanel(
+		"legendary-champion",
+		"Legendary Champion: Rebirth",
+		"Entre na A Arena e megulher em um desafrio frenético, onde seu "+
+		"único objetivo é proteger as suas CARGAS. Fuja e esconda-se de inimigos "+
+		"únicos e incansáveis. Corra em direção a glória da vitória!",
+		["lua"],
+		[
+		["tic80.com/play?cart=3315",               "fa-solid fa-gamepad",  "Jogue em tic80.com"],
+		["duckafire.itch.io/legendary-champion",   "fa-brands fa-itch-io", "Jogue em itch.io"],
+		]
+	);
 
-newProjectPanel(
-	"legendary-champion",
-	"Legendary Champion: Rebirth",
-	"Entre na A Arena e megulher em um desafrio frenético, onde seu "+
-	"único objetivo é proteger as suas CARGAS. Fuja e esconda-se de inimigos "+
-	"únicos e incansáveis. Corra em direção a glória da vitória!",
-	["lua"],
-	[
-	["tic80.com/play?cart=3315",               "fa-solid fa-gamepad",  "Jogue em tic80.com"],
-	["duckafire.itch.io/legendary-champion",   "fa-brands fa-itch-io", "Jogue em itch.io"],
-	]
-);
+	newProjectPanel(
+		"tinylibrary",
+		"Tiny Library",
+		"Esta é uma coleção de bibliotecas gratuitas e de código aberto, criada "+
+		"para facilitar a criação de novos cartuchos para o Tic80 Tiny Computer.",
+		["lua"],
+		[
+		["github.com/duckafire/TinyLibrary",      "fa-solid fa-folder",   "Repositório"],
+		["github.com/duckafire/TinyLibrary/wiki", "fa-solid fa-book",     "Wiki oficial"],
+		["tic80.com",                             "fa-solid fa-computer", "Tic80"]
+		]
+	);
 
-newProjectPanel(
-	"tinylibrary",
-	"Tiny Library",
-	"Esta é uma coleção de bibliotecas gratuitas e de código aberto, criada "+
-	"para facilitar a criação de novos cartuchos para o Tic80 Tiny Computer.",
-	["lua"],
-	[
-	["github.com/duckafire/TinyLibrary",      "fa-solid fa-folder",   "Repositório"],
-	["github.com/duckafire/TinyLibrary/wiki", "fa-solid fa-book",     "Wiki oficial"],
-	["tic80.com",                             "fa-solid fa-computer", "Tic80"]
-	]
-);
+	newProjectPanel(
+		"lim",
+		"Lim",
+		"Lua library compactor (compactador de bibliotecas Lua) é um pequeno "+
+		"programa de terminal, criado para facilitar a compactação de bibliotecas "+
+		"Lua [para o projeto TinyLibrary] em um formato apelidade de Pacote Local.",
+		["c"],
+		[
+		["github.com/duckafire/LIM",      "fa-solid fa-folder", "Repositório"],
+		["lua.org",                       "fa-solid fa-file",   "Linguagem Lua"],
+		]
+	);
 
-newProjectPanel(
-	"lim",
-	"Lim",
-	"Lua library compactor (compactador de bibliotecas Lua) é um pequeno "+
-	"programa de terminal, criado para facilitar a compactação de bibliotecas "+
-	"Lua [para o projeto TinyLibrary] em um formato apelidade de Pacote Local.",
-	["c"],
-	[
-	["github.com/duckafire/LIM",      "fa-solid fa-folder", "Repositório"],
-	["lua.org",                       "fa-solid fa-file",   "Linguagem Lua"],
-	]
-);
+	newProjectPanel(
+		"summaries",
+		"Resumos de bibliotecas",
+		"Este mini projeto consiste em uma pequena documentação, com explicações e "+
+		"exemplos minimalistas, referentes ao conteúdo de bibliotecas padrão. Seus "+
+		"intuito é descomplicar e centralizar tais informações.",
+		["markdown", "html5"],
+		[
+		["github.com/duckafire/Small_Projects/tree/main/summaries", "fa-solid fa-folder", "Repositório"],
+		]
+	);
 
-newProjectPanel(
-	"summaries",
-	"Resumos de bibliotecas",
-	"Este mini projeto consiste em uma pequena documentação, com explicações e "+
-	"exemplos minimalistas, referentes ao conteúdo de bibliotecas padrão. Seus "+
-	"intuito é descomplicar e centralizar tais informações.",
-	["markdown", "html5"],
-	[
-	["github.com/duckafire/Small_Projects/tree/main/summaries", "fa-solid fa-folder", "Repositório"],
-	]
-);
+	newProjectPanel(
+		"nest",
+		"Nest",
+		"Este é o projeto que você está usando neste momento (hehe)! Um pequena e "+
+		"minimalista página web, hospedada no GitHub Pages. Criada com o objetivo "+
+		"de conectar todos os meus trabalhos digitais.",
+		["html5", "css3", "javascript"],
+		[
+		["github.com/duckafire/nest", "fa-solid fa-folder", "Repositório"],
+		["docs.github.com/pt/pages",  "fa-solid fa-file",   "GitHub Pages"],
+		]
+	);
 
-newProjectPanel(
-	"nest",
-	"Nest",
-	"Este é o projeto que você está usando neste momento (hehe)! Um pequena e "+
-	"minimalista página web, hospedada no GitHub Pages. Criada com o objetivo "+
-	"de conectar todos os meus trabalhos digitais.",
-	["html5", "css3", "javascript"],
-	[
-	["github.com/duckafire/nest", "fa-solid fa-folder", "Repositório"],
-	["docs.github.com/pt/pages",  "fa-solid fa-file",   "GitHub Pages"],
-	]
-);
+	setKnownTechnologies([
+		[["lua",   TECH_HIG], ["c",     TECH_HIG], ["cplusplus", TECH_MID], ["javascript", TECH_MID]],
+		[["html5", TECH_MID], ["css3",  TECH_LOW], ["markdown",  TECH_HIG]],
+		[["git",   TECH_MID], ["cmake", TECH_LOW], ["gcc",       TECH_MID], ["debian",     TECH_MID]],
+	]);
 
-createProjectsMoreButton()
+	createProjectsMoreButton()
 </script>
 
 </body>

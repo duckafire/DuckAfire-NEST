@@ -1,3 +1,27 @@
+function setKnownTechnologies(list){
+	let s, i, j, l;
+
+	ABOUT_DUCK_TECH.appendChild( document.createElement("hr") );
+
+	for(j = 0; j < list.length; j++){
+		s = document.createElement("span");
+
+		for(l = 0; l < list[j].length; l++){
+			i = document.createElement("img");
+
+			i.title = list[j][l][0];
+			i.src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${i.title}/${i.title}-original.svg`;
+			i.className = TECH_LEVEL[ list[j][l][1] ];
+			
+			s.appendChild(i);
+		}
+
+		ABOUT_DUCK_TECH.appendChild(s);
+
+		ABOUT_DUCK_TECH.appendChild( document.createElement("hr") );
+	}
+}
+
 function newProjectPanel(_img, _title, _descr, lang, links){
 	// containers
 	const fullCtt = document.createElement("div");
